@@ -1,0 +1,434 @@
+text,label
+cuanto fue el pib,value
+cual fue el valor del pib,value
+dame el dato del pib,value
+cual es la cifra del pib,value
+cuanto crecio el pib,value
+cual fue el crecimiento del pib,value
+cuanto aumento el pib,value
+resultado del pib,value
+dato reciente del pib,value
+ultimo dato del pib,value
+pib del ultimo periodo,value
+pib mas reciente,value
+cual fue el pib de 2023,value
+cual fue el pib de 2024,value
+dame el pib del ano 2022,value
+muestrame el pib anual entre 2018 y 2023,value
+quiero la serie del pib desde 2010 hasta 2024,value
+dame el pib trimestral de 2024,value
+cual fue la variacion t t menos 1 del pib,value
+dame la variacion respecto al periodo anterior del pib,value
+muestrame el crecimiento en el margen del pib,value
+cual fue la variacion interanual del pib,value
+dame la variacion anual del pib,value
+dame el pib por actividad economica,value
+muestrame el desglose del pib por actividad,value
+quiero las cifras del pib por sector economico,value
+dame el detalle por actividad del pib,value
+dame la composicion del pib por componentes del gasto,value
+muestrame el desglose del pib por gasto,value
+quiero las cifras del pib por componentes de gasto,value
+cual fue el aporte del consumo al pib,value
+dame la contribucion de la inversion al pib,value
+cual fue la incidencia por sector en el pib,value
+muestrame que actividades aportaron al pib,value
+dame la contribucion por actividad al pib,value
+cual fue el pib regional de valparaiso,value
+dame el pibr de la region metropolitana,value
+muestrame la cifra del pibr de antofagasta,value
+quiero el valor del pibr para bio bio,value
+dame el dato del pibr de o'higgins,value
+dame la variacion del pibr por region,value
+cual fue el crecimiento del pibr por regiones,value
+muestrame el cambio anual del pibr por region,value
+quiero las cifras regionales del pib,value
+dame el desglose regional del pib,value
+cuanto fue el imacec,value
+cual fue el valor del imacec,value
+dame el dato del imacec,value
+cual es la cifra del imacec,value
+resultado del imacec,value
+numero del imacec,value
+valor observado del imacec,value
+cuanto marco el imacec,value
+nivel del imacec,value
+imacec del ultimo mes,value
+imacec mas reciente,value
+ultimo imacec,value
+dame el ultimo dato del imacec,value
+necesito la ultima cifra del imacec,value
+muestrame el valor mas reciente del imacec,value
+cual es el dato mas actual del imacec,value
+cual fue el imacec de enero 2024,value
+dame el imacec de marzo 2023,value
+muestrame la cifra del imacec en julio 2022,value
+quiero el dato del imacec de noviembre 2021,value
+cual fue el valor del imacec en diciembre 2020,value
+cual fue la variacion interanual del imacec,value
+dame la variacion anual del imacec,value
+cuanto vario el imacec respecto al ano anterior,value
+muestrame el crecimiento interanual del imacec,value
+dame la variacion mensual del imacec,value
+cual fue el cambio mes a mes del imacec,value
+muestrame el crecimiento mensual del imacec,value
+quiero la aceleracion mensual del imacec,value
+dame la variacion en el margen del imacec,value
+dame el imacec desestacionalizado mas reciente,value
+cual fue el ultimo imacec con ajuste estacional,value
+muestrame la cifra del imacec sa,value
+quiero el valor del imacec ajustado por estacionalidad,value
+dame el dato mas reciente del imacec corregido por estacionalidad,value
+dame el imacec original mas reciente,value
+cual fue el ultimo imacec sin ajuste estacional,value
+muestrame la cifra del imacec nsa,value
+quiero el valor del imacec serie original,value
+dame el dato mas reciente del imacec sin desestacionalizar,value
+cual fue el imacec minero,value
+dame el ultimo imacec no minero,value
+muestrame la variacion interanual del imacec minero,value
+quiero el dato del imacec no minero desestacionalizado,value
+cual fue el crecimiento en el margen del imacec no minero,value
+muestrame el imacec por actividad economica,value
+quiero el desglose del imacec por sectores,value
+dame las cifras del imacec por actividad,value
+cual fue el imacec por sector economico,value
+muestrame el detalle de actividades del imacec,value
+cual fue el crecimiento economico,value
+cuanto crecio la economia,value
+cual fue la variacion economica,value
+dato del crecimiento economico,value
+resultado del crecimiento economico,value
+cifra del crecimiento economico,value
+cuanto aumento la economia,value
+crecimiento de la actividad economica,value
+variacion de la economia,value
+actividad economica observada,value
+y ahora dame su cifra,value
+ahora dame su cifra,value
+ahora dame el valor,value
+ahora quiero el valor de eso,value
+dame la cifra de lo anterior,value
+dame el dato de lo anterior,value
+dame el valor de lo anterior,value
+cual fue el valor de lo anterior,value
+cual fue la cifra de eso,value
+cual fue el dato de eso,value
+y cual fue el resultado,value
+y el resultado de eso,value
+dame ese numero,value
+dame ese valor,value
+dame ese dato,value
+quiero la lectura de lo anterior,value
+dame la lectura mas reciente de eso,value
+cual es la lectura mas reciente de lo anterior,value
+cual es el ultimo dato de eso,value
+cual es la ultima cifra de eso,value
+cual fue el ultimo valor de eso,value
+dame el dato mas reciente de eso,value
+muestrame la cifra mas reciente de eso,value
+traeme la ultima lectura de eso,value
+y ahora su variacion,value
+dame la variacion de eso,value
+cual fue la variacion de lo anterior,value
+cual fue la variacion mas reciente de eso,value
+y la variacion interanual de eso,value
+dame la variacion interanual de lo anterior,value
+cual fue el cambio interanual de eso,value
+y la variacion mensual de eso,value
+dame la variacion mensual de lo anterior,value
+cual fue el cambio mes a mes de eso,value
+y la variacion en el margen de eso,value
+dame el crecimiento en el margen de lo anterior,value
+dame la variacion respecto al periodo anterior de eso,value
+cual fue el crecimiento de eso,value
+y cuanto crecio eso,value
+dame el crecimiento de lo anterior,value
+cual fue el aumento de eso,value
+en cuanto aumento eso,value
+en cuanto vario eso,value
+cuanto marco eso,value
+que cifra mostro eso,value
+que resultado marco eso,value
+que numero registro eso,value
+como salio eso,value
+como vino eso,value
+dame la cifra de ese indicador,value
+dame el dato de ese indicador,value
+cual fue el valor de ese indicador,value
+dame la cifra de esa serie,value
+cual fue el resultado de esa serie,value
+dame el ultimo dato de esa serie,value
+dame la ultima cifra de ese indicador,value
+quiero el valor actual de eso,value
+quiero el valor mas reciente de eso,value
+dame la cifra preliminar de eso,value
+y para 2024 cual fue,value
+y para 2023 cual fue el valor,value
+dame el valor de eso en 2022,value
+cual fue la cifra de eso en enero 2024,value
+dame el dato de eso para marzo de 2023,value
+y en el ultimo mes cuanto fue,value
+y en el ultimo trimestre cuanto fue,value
+dame el valor de eso en ese periodo,value
+dame la serie de lo anterior,value
+muestrame la serie de eso,value
+quiero los valores de eso,value
+dame el desglose de eso por actividad,value
+dame el desglose de eso por region,value
+y ahora con ajuste estacional dame la cifra,value
+y ahora sin ajuste estacional dame la cifra,value
+dame la version desestacionalizada de ese dato,value
+dame la serie original de ese dato,value
+y el mismo dato pero anual,value
+y el mismo dato pero trimestral,value
+y el mismo dato pero mensual,value
+y el mismo dato para el pib,value
+y el mismo dato para el imacec,value
+dame la cifra por sector economico del pib con serie desestacionalizada del ultimo dato disponible,value
+cual fue la variacion interanual del imacec corregido por estacionalidad en noviembre del ano pasado,value
+dame la variacion por actividad del pib entre 2022 y 2024 respecto al mismo periodo del ano anterior,value
+muestrame como salio servicios personales en el pibr con la informacion mas reciente,value
+desglosa la tasa de crecimiento respecto al periodo anterior por actividad del pibr en el segundo trimestre 2023,value
+en cuanto se movio a nivel anual el sector servicios inmobiliarios en el pib ajustado estacionalmente en 2025,value
+dame la participacion de pesca en el pib en 2018 con frecuencia anual,value
+quiero los valores del pib con serie desestacionalizada desagregados por actividad desde 2016 hasta 2022,value
+cual fue el ultimo dato de actividad economica de servicios en el imacec sin estacionalidad,value
+que es el pib,methodology
+cual es la definicion del pib,methodology
+que significa el pib,methodology
+explica que es el pib,methodology
+para que sirve el pib,methodology
+que mide el pib,methodology
+como se define el pib,methodology
+descripcion del pib,methodology
+concepto de pib,methodology
+explicacion del pib,methodology
+como se calcula el pib,methodology
+cual es la formula del pib,methodology
+metodo de calculo del pib,methodology
+como se obtiene el pib,methodology
+procedimiento de calculo del pib,methodology
+calculo del pib,methodology
+como se mide el pib,methodology
+metodologia del pib,methodology
+criterio de calculo del pib,methodology
+base de calculo del pib,methodology
+que es el pib nominal,methodology
+que es el pib real,methodology
+que significa producto interno bruto,methodology
+como se interpreta el pib,methodology
+que representa el pib en la economia,methodology
+que informacion entrega el pib,methodology
+que no refleja el pib,methodology
+como se calcula el pib real,methodology
+como se calcula la variacion interanual del pib,methodology
+como se calcula la variacion t t menos 1 del pib,methodology
+cual es la formula del crecimiento del pib,methodology
+metodologia de calculo del pib trimestral,methodology
+como se estima el pib anual,methodology
+como se construye la serie del pib,methodology
+como se calcula la contribucion al pib,methodology
+como se calcula la incidencia sectorial en el pib,methodology
+que componentes del gasto incluye el pib,methodology
+como se clasifica el pib por componentes del gasto,methodology
+que significa consumo inversion y exportaciones en el pib,methodology
+como se construye el pib por actividad economica,methodology
+que significa valor agregado en el contexto del pib,methodology
+que es el pib regional y como se estima,methodology
+como se calcula el pibr,methodology
+que diferencia hay entre pib nacional y pib regional,methodology
+que cobertura geografica tiene el pibr,methodology
+como se interpretan las cifras del pibr por region,methodology
+que significa contribucion regional al crecimiento,methodology
+como se calcula la contribucion de una region al pibr,methodology
+que metodologia se usa para el pibr,methodology
+cada cuanto se actualiza el pib regional,methodology
+por que el pibr puede revisarse,methodology
+que es el imacec,methodology
+cual es la definicion del imacec,methodology
+que significa imacec,methodology
+explica que es el imacec,methodology
+para que sirve el imacec,methodology
+que mide el imacec,methodology
+descripcion del imacec,methodology
+concepto de imacec,methodology
+explicacion del imacec,methodology
+que significa indice mensual de actividad economica,methodology
+como se interpreta el imacec,methodology
+que representa el imacec,methodology
+para que se utiliza el imacec,methodology
+que informacion entrega el imacec,methodology
+que no captura el imacec,methodology
+cual es el alcance del imacec,methodology
+que limitaciones tiene el imacec,methodology
+como se calcula el imacec,methodology
+como se estima el imacec mensual,methodology
+cual es la metodologia de calculo del imacec,methodology
+que formula se usa para la variacion del imacec,methodology
+como se obtiene el imacec desestacionalizado,methodology
+como se ajusta por estacionalidad el imacec,methodology
+como se calcula el imacec minero,methodology
+como se calcula el imacec no minero,methodology
+como se construye la serie del imacec,methodology
+como se revisan las cifras del imacec,methodology
+que diferencia hay entre pib e imacec,methodology
+en que se diferencia el imacec del pib,methodology
+por que el imacec es mensual y el pib trimestral,methodology
+como se relaciona el imacec con el pib,methodology
+se puede usar el imacec como proxy del pib,methodology
+que tan comparable es el imacec con el pib,methodology
+por que pueden diferir imacec y pib,methodology
+como interpretar diferencias entre imacec y pib,methodology
+que significa que una serie este desestacionalizada,methodology
+que significa serie original en imacec,methodology
+que diferencia hay entre sa y nsa,methodology
+cuando conviene usar imacec desestacionalizado,methodology
+cuando conviene usar imacec original,methodology
+como interpretar variacion interanual vs en el margen,methodology
+que significa crecimiento en el margen,methodology
+que significa yoy en imacec,methodology
+como leer una variacion negativa del imacec,methodology
+que es el efecto calendario en el imacec,methodology
+como afecta el numero de dias habiles al imacec,methodology
+como impactan los feriados en la actividad economica,methodology
+por que importa el efecto calendario en el analisis del imacec,methodology
+como se corrige el efecto calendario,methodology
+que diferencia hay entre efecto calendario y estacionalidad,methodology
+como influye un ano bisiesto en el imacec,methodology
+que sectores son mas sensibles al efecto calendario,methodology
+por que comercio y servicios cambian con los dias habiles,methodology
+como interpretar un imacec con menos dias habiles,methodology
+por que se revisan cifras preliminares del imacec,methodology
+cuando una cifra del imacec es preliminar o revisada,methodology
+que puede hacer cambiar una cifra ya publicada del imacec,methodology
+con que frecuencia se revisan las series del imacec,methodology
+por que se actualizan las series del pib,methodology
+que significa una revision metodologica,methodology
+que pasa con las series historicas cuando cambia la metodologia,methodology
+como se empalman series tras una actualizacion metodologica,methodology
+que es el ano base del imacec,methodology
+que es el ano de referencia del imacec,methodology
+que ano base usa el pib actual,methodology
+por que importa el ano base en las series economicas,methodology
+que cambia cuando se actualiza el ano base,methodology
+como se interpretan indices con distinto ano base,methodology
+que son las ponderaciones en el imacec,methodology
+como influyen los pesos sectoriales en el imacec,methodology
+cuando se publica el imacec,methodology
+que dia sale el imacec normalmente,methodology
+con cuanto rezago se publica el imacec,methodology
+donde ver el calendario de publicacion del imacec,methodology
+donde revisar fechas de publicacion del imacec,methodology
+cuando se publica el pib trimestral,methodology
+con que rezago se publica el pib,methodology
+donde ver el calendario del pib,methodology
+como saber la proxima fecha de publicacion del imacec,methodology
+donde encuentro las fechas oficiales de publicacion del banco central,methodology
+donde puedo consultar el imacec,methodology
+donde descargar la serie del imacec,methodology
+donde encuentro el imacec desestacionalizado,methodology
+donde ver las series del pib,methodology
+donde descargar el pibr,methodology
+que fuente oficial publica el imacec,methodology
+que fuente oficial publica el pib,methodology
+donde estan los metadatos del imacec,methodology
+donde esta la ficha metodologica del pib,methodology
+donde veo la metodologia del imacec,methodology
+que actividades incluye el desglose del imacec,methodology
+como se desagrega el imacec por actividad economica,methodology
+que sectores considera el imacec,methodology
+cuantas actividades tiene el desglose del imacec,methodology
+como se define cada actividad del imacec,methodology
+ahora explicamelo,methodology
+ahora explicame eso,methodology
+explicame mejor lo anterior,methodology
+quiero que me expliques lo anterior,methodology
+quiero la definicion de lo anterior,methodology
+dame la definicion de eso,methodology
+cual es la definicion de eso que mencionaste,methodology
+cuanto crecio el imacec en el ultimo periodo disponible,value
+cuanto vario el imacec en el ultimo periodo disponible,value
+cuanto fue la variacion del imacec en el ultimo periodo disponible,value
+cual fue el crecimiento del imacec en el ultimo periodo disponible,value
+cual fue el dato del imacec en el ultimo periodo disponible,value
+dame el imacec del ultimo periodo disponible,value
+cual es el ultimo dato disponible del imacec,value
+dame el ultimo dato disponible del imacec,value
+cuanto crecio la economia en el ultimo periodo disponible,value
+cuanto vario la economia en el ultimo periodo disponible,value
+cual fue la variacion de la economia en el ultimo periodo disponible,value
+cual es el ultimo dato disponible del pib,value
+dame el pib del ultimo periodo disponible,value
+cuanto crecio el pib en el ultimo periodo disponible,value
+cuanto vario el pib en el ultimo periodo disponible,value
+cual fue el crecimiento del pib en el ultimo periodo disponible,value
+cual fue el valor mas reciente del imacec,value
+cual fue la cifra mas reciente del imacec,value
+dame la cifra mas reciente del pib,value
+cual fue la variacion mas reciente del pib,value
+como se calcula el crecimiento del imacec en el periodo disponible,methodology
+como se mide la variacion del imacec en el ultimo periodo,methodology
+como se define el crecimiento del pib en el ultimo periodo,methodology
+como interpretar la variacion del pib en el ultimo periodo,methodology
+que significa variacion interanual en el ultimo periodo,methodology
+como se calcula la variacion interanual del ultimo periodo,methodology
+en cuanto crecieron las actividades economicas,value
+cuanto crecieron las actividades economicas,value
+cuanto variaron las actividades economicas,value
+cual fue la variacion de las actividades economicas,value
+cuanto crecieron las actividades en el ultimo periodo,value
+cual fue el crecimiento de las actividades economicas en el ultimo periodo,value
+dame la variacion de las actividades economicas en el ultimo periodo disponible,value
+cuanto crecio la actividad economica en el ultimo periodo disponible,value
+cual fue la variacion de la actividad economica en el ultimo periodo disponible,value
+cuanto crecio el imacec desestacionalizado en el ultimo periodo,value
+cuanto vario el imacec desestacionalizado en el ultimo periodo,value
+cual fue el crecimiento del imacec desestacionalizado en el ultimo periodo,value
+explica como se calcula la variacion de las actividades economicas,methodology
+que significa el crecimiento de las actividades economicas,methodology
+como interpretar la variacion de las actividades economicas,methodology
+cuanto contribuyeron los sectores de la economia al pib,value
+cuanto contribuyeron los sectores de la economia,value
+cuanto incidio la mineria al crecimiento economico,value
+cuanto incidio la mineria en el imacec,value
+cuanto aporto el sector de servicios a la economia,value
+cuanto aporto el comercio al crecimiento economico,value
+cuanto aporto la industria al crecimiento economico,value
+cuanto aporto la construccion al crecimiento economico,value
+cual fue la contribucion de servicios al pib,value
+cual fue la contribucion del comercio al pib,value
+cual fue la contribucion de la mineria al pib,value
+cual fue la incidencia de mineria en el imacec,value
+cual fue la incidencia de servicios en el imacec,value
+dame la contribucion sectorial al crecimiento economico,value
+dame el aporte por sectores de la economia,value
+cual sector aporto mas al crecimiento economico,value
+que sector incidio mas en el imacec,value
+como se calcula la contribucion de los sectores al pib,methodology
+como se calcula la incidencia de mineria en el imacec,methodology
+que significa aporte sectorial al crecimiento economico,methodology
+como interpretar la contribucion de servicios al pib,methodology
+cuanto crecio el imacec,value
+cuanto vario el imacec,value
+cual fue la variacion del imacec,value
+cual fue el crecimiento del imacec,value
+en cuanto crecio el imacec,value
+en cuanto vario el imacec,value
+de cuanto fue el crecimiento del imacec,value
+de cuanto fue la variacion del imacec,value
+cuanto crecio el imacec en chile,value
+cuanto vario el imacec en chile,value
+cuanto crecio la actividad economica,value
+cuanto vario la actividad economica,value
+en cuanto crecio la economia,value
+de cuanto fue el crecimiento de la economia,value
+de cuanto fue la variacion de la economia,value
+cuanto crecio el indicador imacec,value
+cuanto fue el crecimiento del imacec en el ultimo dato,value
+cuanto fue la variacion del imacec en el ultimo dato,value
+cuanto fue el crecimiento de la economia en el ultimo dato,value
+cuanto vario el pib,value
+cual fue la variacion del pib,value
+cuanto contribuyeron los sectores en la economia,value
+cuanto vario la economia,value

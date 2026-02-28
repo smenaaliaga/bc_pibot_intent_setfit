@@ -1,0 +1,415 @@
+text,label
+imacec,1
+pib,1
+pibr,1
+ipc chile,0
+inflacion chile,0
+tpm chile,0
+actividad economica chile,1
+crecimiento economico chile,1
+indice mensual de actividad economica,1
+producto interno bruto,1
+producto interno bruto regional,1
+imacec desestacionalizado,1
+imacec serie original,1
+imacec minero,1
+imacec no minero,1
+variacion interanual del imacec,1
+variacion mensual del imacec,1
+crecimiento en el margen del imacec,1
+variacion t t-1 del pib,1
+variacion respecto al periodo anterior del pib,1
+cual fue el imacec no minero,1
+dame el imacec minero,1
+quiero el imacec desestacionalizado,1
+muestrame el imacec serie original,1
+cual es la cifra del imacec no minero,1
+dame la variacion del imacec minero,1
+cual fue la variacion interanual del imacec no minero,1
+dame la variacion mensual del imacec desestacionalizado,1
+como se calcula el imacec no minero,1
+que significa imacec no minero,1
+que diferencia hay entre imacec minero y no minero,1
+como influye la mineria en el imacec,1
+sector minero en el imacec,1
+mineria en actividad economica,1
+no mineria en actividad economica,1
+servicios en el imacec,1
+comercio en el imacec,1
+industria en el imacec,1
+construccion en el imacec,1
+transporte en el imacec,1
+servicios financieros en el imacec,1
+servicios empresariales en el imacec,1
+sector economico mineria imacec,1
+sector economico comercio imacec,1
+sector economico servicios imacec,1
+sector economico industria imacec,1
+desglose por sector economico del imacec,1
+desglose por actividad economica del imacec,1
+cifras por sector economico del imacec,1
+cifras por actividad economica del imacec,1
+apertura del imacec por actividad,1
+detalle del imacec por sectores,1
+composicion del imacec por actividad,1
+cual fue el pib por actividad economica,1
+dame el pib por sector economico,1
+desglose sectorial del pib,1
+desglose del pib por actividad economica,1
+contribucion por actividad al pib,1
+incidencia por sector en el pib,1
+aporte sectorial al pib,1
+cual fue el aporte de servicios financieros al pib,1
+cual fue el aporte de mineria al pib,1
+cual fue el aporte de comercio al pib,1
+cual fue el aporte de industria al pib,1
+pib regional por region,1
+cual fue el pibr de la region metropolitana,1
+dame el pibr de valparaiso,1
+variacion del pibr por regiones,1
+desglose regional del pib,1
+cifras regionales del pib,1
+cual fue la inflacion de chile,0
+dato de inflacion en chile,0
+variacion anual de inflacion,0
+inflacion interanual chile,0
+ipc de chile,0
+cual fue el ipc de enero 2024 chile,0
+variacion mensual del ipc chile,0
+variacion anual del ipc chile,0
+que diferencia hay entre ipc e inflacion en chile,0
+que es la tpm en chile,0
+cual es la tasa de politica monetaria,0
+cual fue la tpm mas reciente,0
+tasa de politica monetaria banco central,0
+que mide la tpm,0
+tasa de desempleo chile,0
+cual fue el desempleo mas reciente en chile,0
+dato de desempleo chile,0
+como se calcula la tasa de desempleo en chile,0
+que es el pib real,1
+que es el pib nominal,1
+que diferencia hay entre pib real y nominal,1
+como se calcula el pib real,1
+como se calcula la variacion interanual del pib,1
+como se calcula la variacion interanual del imacec,1
+como se calcula la variacion en el margen del imacec,1
+que significa desestacionalizado en imacec,1
+que significa serie original en imacec,1
+que significa sa en imacec,1
+que significa nsa en imacec,1
+cual es la diferencia entre sa y nsa en imacec,1
+cuando se publica el imacec,1
+calendario de publicacion del imacec,1
+rezago de publicacion del imacec,1
+donde descargar serie del imacec,1
+donde ver metodologia del imacec,1
+donde ver series del pib,1
+donde descargar pibr,1
+donde ver calendario de publicaciones del banco central,1
+que fuente oficial publica el imacec,1
+que fuente oficial publica el pib,1
+que fuentes usa el imacec,1
+nuevo desglose del imacec,1
+que actividades incluye el nuevo desglose del imacec,1
+desde cuando se publica el nuevo desglose del imacec,1
+formulario 29 en el imacec,1
+dte en estimacion del imacec,1
+efecto calendario en el imacec,1
+dias habiles e imacec,1
+impacto de feriados en la actividad economica,1
+ano bisiesto y actividad economica chile,1
+como afecta el efecto calendario al comercio en el imacec,1
+como afecta el efecto calendario a servicios en el imacec,1
+cual fue la cifra del sector economico mineria en el imacec,1
+cual fue la cifra del sector economico servicios financieros en el pib,1
+dame la variacion interanual del sector economico comercio en el imacec,1
+muestrame el crecimiento en el margen del sector economico industria en el imacec,1
+quiero el dato del sector economico no mineria en el imacec desestacionalizado,1
+dame el imacec de mineria y no mineria,1
+comparar imacec minero vs no minero,1
+variacion de servicios financieros en actividad economica,1
+cual fue el crecimiento de servicios financieros en la economia chilena,1
+sector economico servicios financieros chile pib,1
+dame la incidencia de mineria en el crecimiento economico,1
+aporte de no mineria al crecimiento economico,1
+contribucion de sectores economicos al crecimiento del pib,1
+que sectores impulsaron la actividad economica,1
+que sectores explicaron el ultimo imacec,1
+y ahora dame el valor del imacec,1
+y ahora dame la cifra del pib,1
+y para mineria en el imacec,1
+y para no mineria en el imacec,1
+y para servicios financieros en el pib,1
+y con ajuste estacional del imacec,1
+y sin ajuste estacional del imacec,1
+y el desglose por sector economico del imacec,1
+y la variacion interanual del imacec,1
+y el crecimiento en el margen del pib,1
+hola,0
+buenas tardes,0
+gracias,0
+adios,0
+me ayudas con una receta,0
+dame una receta con champinones,0
+como limpiar la freidora de aire,0
+que pelicula me recomiendas,0
+dame rimas con cerveza,0
+como aprender ingles mas rapido,0
+corrige mi mensaje de commit,0
+como usar git merge,0
+como crear una api con fastapi,0
+como usar docker compose,0
+como modularizar frontend y backend,0
+que es websocket,0
+como usar firebase,0
+como empezar con flutter,0
+como usar vscode remote ssh,0
+como reiniciar wireguard,0
+como ver configuracion de wireguard,0
+mineria de datos con python,0
+que es mineria de datos,0
+curso de mineria de datos,0
+algoritmos de mineria de datos,0
+como hacer mineria de datos en pandas,0
+mineria de texto con nlp,0
+sector de un disco duro,0
+sector de arranque en linux,0
+sector defectuoso de disco,0
+como reparar sectores dañados del disco,0
+sector publico y privado diferencia general,0
+como elegir sector en una tabla html,0
+sector de memoria en c,0
+servicio tecnico de notebook,0
+servicio financiero para mi empresa pyme,0
+como crear una app de servicios financieros,0
+diseno de app para servicios financieros,0
+ux para servicios financieros,0
+marketing para servicios financieros,0
+ipc en sistemas operativos,0
+que es ipc en programacion,0
+ipc inter process communication,0
+ejemplos de ipc en linux,0
+pipes y colas ipc en unix,0
+tpm del computador que es,0
+como activar tpm en bios,0
+mi pc no detecta tpm,0
+tpm 2.0 para windows 11,0
+que placa madre tiene tpm,0
+como instalar un modulo tpm,0
+economia de bateria del iphone,0
+modo ahorro de energia en android,0
+economia de combustible del auto,0
+como ahorrar bencina manejando,0
+economia circular que es,0
+economia domestica consejos,0
+economia del hogar como ordenar gastos,0
+servicios financieros personales app de presupuesto,0
+como ordenar mis finanzas personales,0
+como invertir en fondos mutuos,0
+como comprar acciones en chile,0
+que es interes compuesto,0
+que tarjeta de credito conviene,0
+como mejorar mi score crediticio,0
+cual banco conviene para cuenta corriente,0
+servicios de mineria en minecraft,0
+como minar en minecraft,0
+pico para mineria en minecraft,0
+mineria en videojuegos,0
+mineria de criptomonedas con gpu,0
+como minar bitcoin en casa,0
+rentabilidad de mineria crypto,0
+como optimizar mineria de ethereum,0
+sector minero laboral sueldos,0
+trabajos en mineria chile,0
+como postular a mineria en chile,0
+certificaciones para trabajar en mineria,0
+seguridad en faena minera,0
+servicios financieros carrera profesional,0
+que hace un analista de servicios financieros,0
+salidas laborales en servicios financieros,0
+como entrar al sector financiero,0
+que estudiar para banca y finanzas,0
+como hacer scraping de datos economicos,0
+como leer un csv en python,0
+como usar openpyxl,0
+que es ner y bio tagging,0
+que es jointbert,0
+que es crf en ner,0
+que significa error 429 en api,0
+insufficient quota openai api,0
+ayudame a redactar un correo,0
+dame ideas para una app,0
+quiero practicar ingles,0
+hazme un quiz de python,0
+dame ejercicios de sql,0
+como preparar una entrevista tecnica,0
+como instalar python en ubuntu,0
+como ver puertos abiertos en linux,0
+como crear un dockerfile,0
+como crear una app con react,0
+como usar typescript,0
+como conectarme por ssh,0
+como usar tmux en linux,0
+como hacer web scraping,0
+como guardar html crudo,0
+como eliminar duplicados en mongodb,0
+como usar pyspark,0
+como optimizar un job spark,0
+como versionar datasets,0
+como usar dvc,0
+como usar mlflow,0
+como hacer una presentacion en powerpoint,0
+dame una rutina de estudio,0
+motivame un poco,0
+quiero conversar de cualquier tema,0
+que es la economia,1
+quiero saber que es la economia,1
+podrias explicarme que es la economia,1
+cual es la definicion de economia,1
+que significa economia en macroeconomia,1
+que es la actividad economica,1
+quiero saber que es la actividad economica,1
+que significa crecimiento economico,1
+que es el crecimiento economico,1
+como se interpreta el crecimiento economico,1
+que es una recesion economica,1
+que es expansion economica,1
+como se mide la economia de chile,1
+que indicador mide la economia chilena,1
+que es el ciclo economico,1
+que es el imacec,1
+que es el pib,1
+que es el pibr,1
+que es el ipc,0
+que es la inflacion,0
+que es la tpm,0
+que significa imacec,1
+que significa pib,1
+que significa pibr,1
+que significa ipc,0
+que significa inflacion,0
+que significa tpm,0
+y que es el imacec,1
+y que es el pib,1
+y que es el pibr,1
+y que es el ipc,0
+y que es la inflacion,0
+y que es la tpm,0
+y que significa el imacec,1
+y que significa el pib,1
+y que significa el pibr,1
+y que significa el ipc,0
+y que significa la inflacion,0
+y que significa la tpm,0
+ahora dame la cifra del imacec,1
+ahora dame el valor del imacec,1
+ahora dame el dato del imacec,1
+ahora dame la cifra del pib,1
+ahora dame el valor del pib,1
+ahora dame el dato del pib,1
+ahora dame la cifra del pibr,1
+ahora dame el valor del pibr,1
+ahora dame el dato del pibr,1
+ahora dame la cifra del ipc,0
+ahora dame el valor del ipc,0
+ahora dame el dato del ipc,0
+ahora dame la cifra de la inflacion,0
+ahora dame el valor de la inflacion,0
+ahora dame el dato de la inflacion,0
+ahora dame la cifra de la tpm,0
+ahora dame el valor de la tpm,0
+ahora dame el dato de la tpm,0
+quiero saber que es el imacec,1
+quiero saber que es el pib,1
+quiero saber que es el pibr,1
+quiero saber que es el ipc,0
+quiero saber que es la inflacion,0
+quiero saber que es la tpm,0
+podrias explicarme que es el imacec,1
+podrias explicarme que es el pib,1
+podrias explicarme que es el pibr,1
+podrias explicarme que es el ipc,0
+podrias explicarme que es la inflacion,0
+podrias explicarme que es la tpm,0
+ahora lo quiero para la serie desestacionalizada,1
+ahora lo quiero desestacionalizado,1
+ahora lo quiero con ajuste estacional,1
+ahora lo quiero sin ajuste estacional,1
+y ahora para la serie desestacionalizada,1
+y ahora para la serie original,1
+y ahora con ajuste estacional,1
+y ahora sin ajuste estacional,1
+dame la cifra,0
+dame el valor,0
+dame el dato,0
+ahora quiero que me des la cifra,0
+ahora dame la cifra,0
+ahora dame el valor,0
+ahora dame el dato,0
+dame la cifra de cuanto dinero hay en el mundo,0
+dame el valor total del dinero en el mundo,0
+dame el dato de cuanto dinero existe en el mundo,0
+cuanto dinero hay en el mundo,0
+cual es la cifra de usuarios de instagram,0
+dame la cifra de reproducciones de spotify,0
+cual es el valor de mercado de apple,0
+dame el dato de poblacion mundial,0
+dame la cifra de ventas de autos electricos,0
+dame el valor del dolar hoy,0
+dame la cifra de temperatura promedio global,0
+dame el dato de trafico web de youtube,0
+cuanto contribuyo la mineria a la economia,1
+cuanto contribuyeron los sectores de la economia,1
+cuanto contribuyeron los sectores de la economia al pib,1
+cuanto contribuyeron los sectores en la economia,1
+cuanto aporto el sector servicios a la economia,1
+cuanto aporto el sector comercio a la economia,1
+cuanto aporto el sector industria a la economia,1
+cuanto aporto la construccion a la economia,1
+cuanto incidio la mineria en el crecimiento economico,1
+cuanto incidio el comercio en el crecimiento economico,1
+cuanto incidio la industria en el crecimiento economico,1
+cuanto incidio servicios en el crecimiento economico,1
+cual fue la contribucion de la mineria al pib,1
+cual fue la contribucion del comercio al pib,1
+cual fue la contribucion de la industria al pib,1
+cual fue la contribucion de servicios al pib,1
+cual fue la incidencia de la mineria en el imacec,1
+cual fue la incidencia de servicios en el imacec,1
+dame el aporte de la mineria al crecimiento economico,1
+dame el aporte del comercio al crecimiento economico,1
+dame el aporte de la industria al crecimiento economico,1
+dame el aporte de servicios al crecimiento economico,1
+dame la contribucion por sectores de la economia,1
+que sector aporto mas al crecimiento economico,1
+que sector incidio mas en el imacec,1
+como aportaron los sectores al crecimiento economico,1
+como contribuyeron los sectores a la actividad economica,1
+cuanto explico la mineria del crecimiento economico,1
+cuanto explicaron los servicios del crecimiento economico,1
+quiero saber cuanto contribuyo el gasto al pib,1
+cuanto contribuyo el gasto al pib,1
+cuanto aporto el gasto al pib,1
+cual fue la contribucion del gasto al pib,1
+cual fue el aporte del gasto al pib,1
+cuanto incidio el gasto en el crecimiento del pib,1
+quiero saber cuanto contribuyo la inversion al pib,1
+cuanto contribuyo la inversion al pib,1
+cuanto aporto la inversion al pib,1
+cual fue la contribucion de la inversion al pib,1
+cual fue el aporte de la inversion al pib,1
+cuanto incidio la inversion en el crecimiento del pib,1
+cuanto contribuyo el consumo al pib,1
+cuanto aporto el consumo al pib,1
+cual fue la contribucion del consumo al pib,1
+cuanto incidio el consumo en el crecimiento del pib,1
+cuanto contribuyeron las exportaciones al pib,1
+cuanto aportaron las exportaciones al pib,1
+cual fue la contribucion de las exportaciones al pib,1
+cuanto contribuyeron las importaciones al pib,1
+cual fue la contribucion de las importaciones al pib,1
+desglose del pib por componentes del gasto,1
+aporte de los componentes del gasto al pib,1
+incidencia de los componentes del gasto en el pib,1
+contribucion de consumo e inversion al pib,1

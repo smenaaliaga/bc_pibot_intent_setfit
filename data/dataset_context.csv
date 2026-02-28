@@ -1,0 +1,335 @@
+text,label
+como funciona este indicador,followup
+que mide este indicador,followup
+cual es la definicion exacta,followup
+dame los detalles completos,followup
+puedes explicar el indicador,followup
+como se obtiene este dato,followup
+cual es la formula utilizada,followup
+base metodologica del indicador,followup
+como se interpreta este resultado,followup
+que significa esta cifra,followup
+que significa este dato,followup
+como se calcula esta variacion,followup
+como se calcula este valor,followup
+de donde sale este dato,followup
+de donde sale esa cifra,followup
+cual es la metodologia de este indicador,followup
+cual es la metodologia de ese dato,followup
+cual es la formula de esa variacion,followup
+que representa ese resultado,followup
+que representa esa cifra,followup
+que mide esa serie,followup
+para que sirve ese indicador,followup
+como se lee ese numero,followup
+como interpretar ese cambio,followup
+cual es la diferencia con ese indicador,followup
+como se relaciona con eso,followup
+cuando se publica eso,followup
+con que rezago sale eso,followup
+donde veo esa serie,followup
+donde esta la metodologia de eso,followup
+que fuentes usa eso,followup
+por que cambio eso,followup
+a que se debe ese cambio,followup
+que limitaciones tiene eso,followup
+eso es preliminar o revisado,followup
+eso se revisa despues,followup
+eso tiene ajuste estacional,followup
+eso tiene serie original,followup
+eso tiene version desestacionalizada,followup
+y esa misma cifra,followup
+y ese mismo dato,followup
+y ese mismo resultado,followup
+y el mismo indicador,followup
+y la misma serie,followup
+y la misma variacion,followup
+y ese valor exacto,followup
+y el dato exacto,followup
+y el valor final,followup
+y el resultado final,followup
+y la cifra final,followup
+y el ultimo dato de eso,followup
+y la ultima cifra de eso,followup
+y el valor mas reciente de eso,followup
+y la lectura mas reciente de eso,followup
+y la variacion de eso,followup
+y la variacion interanual de eso,followup
+y la variacion mensual de eso,followup
+y la variacion en el margen de eso,followup
+y el crecimiento de eso,followup
+y el aumento de eso,followup
+y el cambio de eso,followup
+y cuanto vario eso,followup
+y cuanto crecio eso,followup
+y cuanto fue eso,followup
+y cuanto marco eso,followup
+y como salio eso,followup
+y como vino eso,followup
+y para 2024,followup
+y para 2023,followup
+y para 2022,followup
+y en 2024,followup
+y en 2023,followup
+y en enero 2024,followup
+y en marzo 2023,followup
+y en el ultimo mes,followup
+y en el ultimo trimestre,followup
+y en ese periodo,followup
+y para ese periodo,followup
+y para ese mes,followup
+y para ese trimestre,followup
+y para ese ano,followup
+y del ano anterior,followup
+y del periodo anterior,followup
+y del mismo periodo,followup
+y para chile,followup
+y para la region metropolitana,followup
+y para valparaiso,followup
+y para mineria,followup
+y para servicios,followup
+y para comercio,followup
+y por actividad,followup
+y por sector,followup
+y por regiones,followup
+y por componentes,followup
+y por gasto,followup
+y con ajuste estacional,followup
+y sin ajuste estacional,followup
+y desestacionalizado,followup
+y serie original,followup
+y serie ajustada,followup
+y version sa,followup
+y version nsa,followup
+y en terminos reales,followup
+y en terminos nominales,followup
+y el mismo dato para pib,followup
+y el mismo dato para imacec,followup
+y el mismo dato para ipc,followup
+y el mismo dato para inflacion,followup
+y ahora dame su valor,followup
+y ahora dame su cifra,followup
+y ahora dame su dato,followup
+y ahora explicamelo,followup
+y ahora explicame eso,followup
+y ahora como se calcula,followup
+y ahora cual es la metodologia,followup
+y ahora cual fue la variacion,followup
+y ahora dame la cifra mas reciente,followup
+y ahora dame el valor exacto,followup
+ok y ahora dame ese dato,followup
+perfecto y ahora dame su valor,followup
+entonces ahora dame la cifra,followup
+pero ahora explicame eso,followup
+primero dime que es el pib,standalone
+primero explicame que es el pib,standalone
+primero quiero saber que es el imacec,standalone
+primero explicame que significa imacec,standalone
+ahora explicame que es el pib,standalone
+ahora explicame que es el imacec,standalone
+ahora dime como se calcula el pib,standalone
+ahora dime como se calcula el imacec,standalone
+ahora quiero el valor del pib,standalone
+ahora quiero el valor del imacec,standalone
+ok cual fue el valor del pib,standalone
+ok cual fue el valor del imacec,standalone
+ok cual es la ultima cifra del pib,standalone
+ok cual es la ultima cifra del imacec,standalone
+y cual es la definicion del pib,standalone
+y cual es la definicion del imacec,standalone
+y como se calcula el pib,standalone
+y como se calcula el imacec,standalone
+y cual fue el valor del pib en 2024,standalone
+y cual fue el valor del imacec en enero 2024,standalone
+y cuanto fue la inflacion en 2024,standalone
+y cual fue el valor del ipc en enero 2024,standalone
+y cual fue la tpm en 2024,standalone
+y cual fue la tasa de desempleo mas reciente,standalone
+y que significa inflacion acumulada,standalone
+y que significa imacec desestacionalizado,standalone
+y que significa pib real,standalone
+y que mide el ipc en chile,standalone
+y donde se publica el imacec,standalone
+y donde ver la metodologia del pib,standalone
+y donde ver la metodologia del imacec,standalone
+y donde ver el calendario de publicaciones,standalone
+y cual es el dato mas reciente del pib,standalone
+y cual es el dato mas reciente del imacec,standalone
+y dame la variacion interanual del imacec,standalone
+y dame la variacion mensual del imacec desestacionalizado,standalone
+y dame el pib trimestral de 2024,standalone
+y dame el pibr de valparaiso,standalone
+y dame el imacec minero mas reciente,standalone
+y dame el imacec no minero desestacionalizado,standalone
+y dame el desglose del imacec por actividad,standalone
+y dame el desglose del pib por gasto,standalone
+ok explicame que es la inflacion,standalone
+ok explicame que es el ipc,standalone
+ok explicame que es la tpm,standalone
+ok explicame que es la tasa de desempleo,standalone
+ok como se calcula la inflacion,standalone
+ok como se calcula el ipc,standalone
+ok como se mide la actividad economica mensual en chile,standalone
+ok cual fue la inflacion de 2023,standalone
+ok cual fue el ipc de enero 2024,standalone
+ok cual fue el ultimo dato de desempleo,standalone
+ok cual es la tpm actual,standalone
+despues dime que es el pib regional,standalone
+despues dime como se calcula el pibr,standalone
+despues dime cual fue el pibr de antofagasta,standalone
+despues dime cual fue el imacec de diciembre 2023,standalone
+despues dime la variacion anual del pib en 2023,standalone
+despues explicame la diferencia entre pib e imacec,standalone
+despues explicame la diferencia entre ipc e inflacion,standalone
+por favor dime que es el pib,standalone
+por favor dime que es el imacec,standalone
+por favor dime cual fue el valor del pib,standalone
+por favor dime cual fue el valor del imacec,standalone
+por favor explicame como se calcula el pib,standalone
+por favor explicame como se calcula el imacec,standalone
+podrias decirme que es el pib,standalone
+podrias decirme que es el imacec,standalone
+podrias decirme cual fue el ultimo imacec,standalone
+podrias decirme cual fue el ultimo pib trimestral,standalone
+podrias explicarme que significa imacec desestacionalizado,standalone
+podrias explicarme como interpretar la variacion interanual del imacec,standalone
+necesito saber que es el pib,standalone
+necesito saber que es el imacec,standalone
+necesito saber cual fue el valor del pib en 2023,standalone
+necesito saber cual fue el valor del imacec en marzo 2024,standalone
+necesito saber como se calcula el ipc,standalone
+necesito saber cual fue la inflacion mas reciente,standalone
+quiero saber que es el pib real,standalone
+quiero saber que es el imacec minero,standalone
+quiero saber como se calcula la variacion interanual del pib,standalone
+quiero saber como se obtiene el imacec desestacionalizado,standalone
+quiero saber cual fue el imacec del ultimo mes,standalone
+quiero saber cual fue el pib de chile en 2024,standalone
+quiero saber cual fue la inflacion de 2024 en chile,standalone
+quiero saber cual fue el ipc de enero 2024,standalone
+quiero saber donde ver la metodologia del imacec,standalone
+quiero saber donde ver el calendario de publicaciones economicas,standalone
+ahora dame su cifra,followup
+ahora dame su valor,followup
+ahora dame su dato,followup
+ahora dame esa cifra,followup
+ahora dame ese valor,followup
+ahora dame ese dato,followup
+ahora dame la cifra de eso,followup
+ahora dame el valor de eso,followup
+ahora dame el dato de eso,followup
+ahora dame la cifra de lo anterior,followup
+ahora dame el valor de lo anterior,followup
+ahora dame el dato de lo anterior,followup
+ahora quiero su cifra,followup
+ahora quiero su valor,followup
+ahora quiero su dato,followup
+ahora quiero la cifra de eso,followup
+ahora quiero el valor de eso,followup
+ahora quiero el dato de eso,followup
+ahora cual fue su cifra,followup
+ahora cual fue su valor,followup
+ahora cual fue su dato,followup
+ahora cual es su cifra,followup
+ahora cual es su valor,followup
+ahora cual es su dato,followup
+ahora cual fue la cifra de eso,followup
+ahora cual fue el valor de eso,followup
+ahora cual fue el dato de eso,followup
+ahora y su cifra,followup
+ahora y su valor,followup
+ahora y su dato,followup
+ok ahora dame su cifra,followup
+ok ahora dame su valor,followup
+ok ahora dame su dato,followup
+perfecto ahora dame su cifra,followup
+perfecto ahora dame su valor,followup
+entonces ahora dame su cifra,followup
+entonces ahora dame su valor,followup
+entonces ahora dame su dato,followup
+pero ahora dame su cifra,followup
+pero ahora dame su valor,followup
+pero ahora dame su dato,followup
+ahora dame la cifra del pib,followup
+ahora dame el valor del pib,followup
+ahora dame el dato del pib,followup
+ahora dame la cifra del imacec,followup
+ahora dame el valor del imacec,followup
+ahora dame el dato del imacec,followup
+ahora dime cual fue el pib de 2024,standalone
+ahora dime cual fue el imacec de enero 2024,standalone
+ahora explicame que es el pib,standalone
+ahora explicame que es el imacec,standalone
+ahora explicame como se calcula el pib,standalone
+ahora explicame como se calcula el imacec,standalone
+cuanto crecio la economia,standalone
+cuanto crecio la economia chilena,standalone
+cual fue el crecimiento de la economia,standalone
+cual fue el crecimiento economico,standalone
+cual fue la variacion de la economia,standalone
+en cuanto crecio la economia,standalone
+en cuanto vario la economia,standalone
+cual fue la cifra de crecimiento economico,standalone
+dame el crecimiento de la economia,standalone
+dame la variacion economica mas reciente,standalone
+dame cuanto crecio la economia en 2024,standalone
+dame cuanto crecio la economia en 2023,standalone
+cual fue el crecimiento de la economia en 2024,standalone
+cual fue el crecimiento economico en 2023,standalone
+dame la variacion interanual de la economia,standalone
+dame la variacion anual de la economia,standalone
+cuanto crecio el pib,standalone
+cual fue el crecimiento del pib,standalone
+cuanto crecio el imacec,standalone
+cual fue el crecimiento del imacec,standalone
+que es la economia,standalone
+quiero saber que es la economia,standalone
+podrias explicarme que es la economia,standalone
+cual es la definicion de economia,standalone
+que significa economia en terminos macroeconomicos,standalone
+que es la actividad economica,standalone
+quiero saber que es la actividad economica,standalone
+que significa crecimiento economico,standalone
+que es el crecimiento economico,standalone
+como se interpreta el crecimiento economico,standalone
+ahora dame la variacion de la mineria,followup
+ahora dame la variacion del sector minero,followup
+ahora dame la variacion de servicios,followup
+ahora dame la variacion de comercio,followup
+ahora dame la variacion de industria,followup
+ahora dame la variacion de construccion,followup
+ahora dame la variacion por actividad,followup
+ahora dame la variacion por sector,followup
+ahora dame la variacion por regiones,followup
+ahora dame la variacion de la region metropolitana,followup
+ahora dame la variacion de valparaiso,followup
+ahora dame la variacion de antofagasta,followup
+ahora dame la variacion interanual de la mineria,followup
+ahora dame la variacion mensual de la mineria,followup
+ahora dame la variacion en el margen de la mineria,followup
+y en cuanto vario respecto al periodo anterior,followup
+y en cuanto crecio respecto al periodo anterior,followup
+y cuanto vario respecto al periodo anterior,followup
+y cuanto crecio respecto al periodo anterior,followup
+y cual fue la variacion respecto al periodo anterior,followup
+y cual fue el crecimiento respecto al periodo anterior,followup
+y ahora en cuanto vario respecto al periodo anterior,followup
+y ahora cuanto vario respecto al periodo anterior,followup
+y ahora cual fue la variacion respecto al periodo anterior,followup
+y respecto al periodo anterior en cuanto vario,followup
+y respecto al periodo anterior cuanto fue,followup
+y respecto al periodo anterior cual fue la variacion,followup
+y en terminos t t menos 1 cuanto fue,followup
+y t t menos 1 cuanto vario,followup
+y en el margen cuanto vario respecto al periodo anterior,followup
+y en el margen cuanto crecio respecto al periodo anterior,followup
+ahora lo quiero para la serie desestacionalizada,followup
+ahora lo quiero desestacionalizado,followup
+ahora lo quiero con ajuste estacional,followup
+ahora lo quiero sin ajuste estacional,followup
+y ahora para la serie desestacionalizada,followup
+y ahora para la serie original,followup
+y ahora con ajuste estacional,followup
+y ahora sin ajuste estacional,followup
+y el mismo dato pero desestacionalizado,followup
+y el mismo dato pero serie original,followup
