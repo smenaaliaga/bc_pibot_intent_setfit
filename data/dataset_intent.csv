@@ -330,6 +330,13 @@ donde descargar la serie del imacec,methodology
 donde encuentro el imacec desestacionalizado,methodology
 donde ver las series del pib,methodology
 donde descargar el pibr,methodology
+cuales son las fuentes de informacion,methodology
+dame sus fuentes de informacion,methodology
+cuales son las fuentes de informacion del pib,methodology
+dame las fuentes de informacion del imacec,methodology
+cuales son las fuentes de informacion del imacec,methodology
+dame sus fuentes de informacion del pib,methodology
+que fuente oficial publica el pib,methodology
 que fuente oficial publica el imacec,methodology
 que fuente oficial publica el pib,methodology
 donde estan los metadatos del imacec,methodology
@@ -432,3 +439,170 @@ cuanto vario el pib,value
 cual fue la variacion del pib,value
 cuanto contribuyeron los sectores en la economia,value
 cuanto vario la economia,value
+dame el valor del pib real del ultimo trimestre,value
+cual fue la cifra del pib nominal en 2024,value
+necesito la variacion interanual del pib del cuarto trimestre 2023,value
+cuanto fue el crecimiento trimestral del pib real en 2022,value
+muestrame el nivel del pib anual de 2019,value
+quiero la cifra del pib por actividad para 2024,value
+dame el aporte de servicios al pib en el ultimo trimestre,value
+cual fue la contribucion de mineria al pib en 2023,value
+dame el valor del pibr de la region de coquimbo,value
+cual fue la variacion anual del pibr de maule,value
+necesito el ultimo dato del imacec desestacionalizado,value
+cual fue el imacec nsa de enero 2025,value
+dame la variacion mensual del imacec sa de febrero 2024,value
+muestrame la variacion interanual del imacec no minero,value
+cual fue el valor del imacec minero en el ultimo mes,value
+quiero el dato del imacec por sector servicios,value
+dame la cifra del imacec para comercio en el ultimo dato,value
+cual fue la variacion en el margen del imacec de industria,value
+muestrame el crecimiento de la actividad economica en 2024,value
+cual fue la cifra del crecimiento economico del ultimo trimestre,value
+dame el dato de actividad economica del mes pasado,value
+cual fue el resultado del pib en terminos reales,value
+dame el ultimo valor del pib trimestral desestacionalizado,value
+quiero la serie trimestral del pib real desde 2015,value
+muestrame la serie mensual del imacec desde 2020,value
+cual fue el valor del pib regional de atacama en 2022,value
+dame la variacion interanual del pibr de tarapaca,value
+cual fue la contribucion del consumo privado al pib,value
+dame la contribucion de exportaciones al pib en 2024,value
+muestrame el aporte de inversion al crecimiento del pib,value
+cual fue la incidencia de servicios en el imacec mas reciente,value
+dame la incidencia de mineria en el imacec del ultimo mes,value
+cuanto fue la variacion del imacec en marzo 2025,value
+cual fue la cifra del pib de chile en 2021,value
+dame el dato mas reciente del pib por componentes del gasto,value
+muestrame el valor del pib por sector comercio en 2023,value
+cual fue el crecimiento anual del pib regional de nuble,value
+dame el dato del pibr de magallanes en 2024,value
+cual fue el ultimo dato de actividad economica no minera,value
+muestrame el resultado del imacec ajustado estacionalmente,value
+que significa pib real,methodology
+que significa pib nominal,methodology
+como se define la variacion trimestral del pib,methodology
+como se calcula la variacion anual del pib,methodology
+como se calcula la variacion mensual del imacec,methodology
+como se interpreta una incidencia en el imacec,methodology
+como se calcula la contribucion de un sector al pib,methodology
+que metodologia usa el pibr por region,methodology
+como se estima el pib regional,methodology
+que diferencia hay entre nivel e indice en imacec,methodology
+como leer el imacec desestacionalizado,methodology
+como leer el imacec serie original,methodology
+que significa crecimiento en el margen del imacec,methodology
+cual es la formula de variacion en doce meses,methodology
+como se construye el pib por componentes del gasto,methodology
+que incluye el consumo en cuentas nacionales,methodology
+que incluye la inversion en el pib,methodology
+que son las exportaciones netas en el pib,methodology
+como se calcula el valor agregado por actividad,methodology
+que cobertura tiene el pibr,methodology
+con que frecuencia se revisan las cifras del pib,methodology
+por que se revisan los datos del imacec,methodology
+que es una revision ordinaria de series,methodology
+que es una revision metodologica de cuentas nacionales,methodology
+como se empalman series del pib cuando cambia el ano base,methodology
+por que cambia el ano base del imacec,methodology
+que significa ponderacion sectorial,methodology
+como se determinan los pesos por actividad,methodology
+como afecta el efecto calendario al imacec,methodology
+cual es la diferencia entre estacionalidad y calendario,methodology
+como interpretar una tasa negativa de crecimiento,methodology
+como se calcula la variacion t t menos 1,methodology
+como se calcula la variacion a doce meses del imacec,methodology
+como se calcula el aporte sectorial al crecimiento,methodology
+que fuente oficial publica las series del pib,methodology
+donde se encuentra la ficha tecnica del imacec,methodology
+donde se ve la metadata del pibr,methodology
+cuando se publica el imacec mensual,methodology
+cual es el rezago de publicacion del imacec,methodology
+como comparar pib e imacec correctamente,methodology
+en que casos no conviene comparar imacec con pib,methodology
+que limita el uso del imacec como proxy del pib,methodology
+como se interpreta una serie encadenada,methodology
+que es una serie a precios constantes,methodology
+que es una serie a precios corrientes,methodology
+como se calcula el deflactor implicito del pib,methodology
+que significa la desagregacion por actividad economica,methodology
+como se definen los sectores en el desglose del imacec,methodology
+que diferencia hay entre contribucion e incidencia,methodology
+dame mas detalles,other
+puedes dar mas detalles,other
+quiero mas detalles de eso,other
+necesito mas informacion de eso,other
+amplia lo anterior,other
+amplia esa respuesta,other
+podrias ampliar eso,other
+podrias profundizar en eso,other
+profundiza en lo anterior,other
+continua con eso,other
+continua con lo anterior,other
+sigamos con eso,other
+sigamos con lo anterior,other
+sigue con ese tema,other
+dame mas contexto de eso,other
+dame mas contexto de lo anterior,other
+cuentame mas de eso,other
+cuentame mas sobre lo anterior,other
+desarrolla un poco mas eso,other
+desarrolla mejor lo anterior,other
+puedes extender esa respuesta,other
+quiero que lo extiendas,other
+ok continua,other
+ok sigamos,other
+perfecto continua,other
+entendido continua,other
+dale continua,other
+y despues,other
+y luego,other
+y sobre eso,other
+y sobre lo anterior,other
+y en ese caso,other
+y para ese caso,other
+y con eso,other
+y con lo anterior,other
+y lo mismo,other
+y lo mismo para eso,other
+me quedo una duda,other
+tengo una duda de eso,other
+aclara eso,other
+aclara lo anterior,other
+podrias aclarar eso,other
+quiero aclarar eso,other
+hazlo mas claro,other
+explicalo mas claro,other
+puedes ser mas claro con eso,other
+precisa eso,other
+precisa lo anterior,other
+detalla eso,other
+detalla lo anterior,other
+quiero que detalles eso,other
+ahonda en eso,other
+ahonda en lo anterior,other
+quiero profundizar en eso,other
+quiero seguir con ese punto,other
+quiero seguir con lo anterior,other
+dame seguimiento de eso,other
+sigamos con esa linea,other
+vamos por ese punto,other
+vamos con eso,other
+dame otra mirada de eso,other
+puedes reformular eso,other
+reformula lo anterior,other
+puedes repetir eso,other
+repite lo anterior,other
+resumelo,other
+resumelo mejor,other
+haz un resumen de eso,other
+ahora continuemos,other
+y ahora seguimos con eso,other
+quiero continuar con eso,other
+y sobre ese dato,other
+y sobre ese tema,other
+eso mismo,other
+lo anterior,other
+mas de eso,other
+mas informacion,other
+mas contexto,other

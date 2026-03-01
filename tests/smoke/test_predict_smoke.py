@@ -1,4 +1,4 @@
-from src.infer.predict import predict_all_tasks
+from src.infer.predict import predict_all_tasks, predict_all_tasks_detailed
 
 
 class DummyEncoder:
@@ -22,9 +22,21 @@ class DummyModel:
 def test_predict_all_tasks_smoke():
     id2label = {
         "macro": {0: "0", 1: "1"},
-        "intent": {0: "value", 1: "method"},
+        "intent": {0: "value", 1: "methodology", 2: "other"},
         "context": {0: "standalone", 1: "followup"},
     }
     result = predict_all_tasks("hola", DummyEncoder(), DummyModel(), id2label)
     assert set(result.keys()) == {"macro", "intent", "context"}
     assert "label" in result["macro"] and "score" in result["macro"]
+
+
+def test_predict_all_tasks_detailed_smoke():
+    id2label = {
+        "macro": {0: "0", 1: "1"},
+        "intent": {0: "value", 1: "methodology", 2: "other"},
+        "context": {0: "standalone", 1: "followup"},
+    }
+    result = predict_all_tasks_detailed("hola", DummyEncoder(), DummyModel(), id2label, top_k=3)
+    assert set(result.keys()) == {"macro", "intent", "context"}
+    assert "top_k" in result["intent"]
+    assert len(result["intent"]["top_k"]) >= 1

@@ -3,7 +3,7 @@
 Proyecto end-to-end para entrenar **3 cabezas clasificadoras multitarea** con un **sentence embedding compartido**:
 
 - `macro_cls`: `{1, 0}`
-- `intent_cls`: `{value, method}`
+- `intent_cls`: `{value, methodology, other}`
 - `context_mode_cls`: `{standalone, followup}`
 
 Incluye:
@@ -11,6 +11,7 @@ Incluye:
 - Evaluación (`evaluate`)
 - Test por texto (`test`)
 - Modo interactivo (`interactive`)
+- Modo QA por consola (`qa`)
 - Subida a Hugging Face (`upload` o `scripts/upload_to_hf.py`)
 
 ## 1) Estructura esperada de datos
@@ -154,6 +155,16 @@ python -m src.main interactive --artifact-dir artifacts --device cuda
 
 Escribe `exit` para terminar.
 
+## 6.1) Modo QA por consola
+
+Muestra clasificación por tarea y ranking top-k por cada una:
+
+```bash
+python -m src.main qa --artifact-dir artifacts --device cpu --top-k 3
+```
+
+Escribe `exit` para terminar.
+
 ## 7) Subir a Hugging Face
 
 ### 7.1) Prerrequisitos
@@ -254,3 +265,4 @@ En `artifacts/` se guarda:
 
 - El sistema está parametrizado por CLI para entrenamiento, evaluación, test y upload.
 - El modo `test` y `interactive` devuelven `label` y `score` para `macro`, `intent`, `context`.
+- El modo `qa` además muestra el ranking top-k por tarea.

@@ -9,6 +9,7 @@ from src.data.io_csv import build_label_maps, load_task_data
 from src.hub.upload import upload_artifacts_to_hf
 from src.infer.interactive import interactive_loop
 from src.infer.predict import predict_all_tasks
+from src.infer.qa_console import qa_loop
 from src.model.encoder import SharedEncoder
 from src.model.multitask_model import MultiTaskClassifier
 from src.serialization.artifacts import load_artifacts, save_artifacts
@@ -158,6 +159,17 @@ def interactive_command(args) -> None:
     interactive_loop(encoder, multitask_model, id2label, device=args.device)
 
 
+def qa_command(args) -> None:
+    encoder, multitask_model, _, id2label = load_artifacts(Path(args.artifact_dir), device=args.device)
+    qa_loop(
+        encoder=encoder,
+        multitask_model=multitask_model,
+        id2label=id2label,
+        device=args.device,
+        top_k=args.top_k,
+    )
+
+
 def upload_command(args) -> None:
     upload_artifacts_to_hf(
         local_dir=Path(args.artifact_dir),
@@ -224,6 +236,12 @@ def build_parser() -> argparse.ArgumentParser:
     interactive_parser.add_argument("--artifact-dir", default="artifacts")
     interactive_parser.add_argument("--device", default="cpu")
     interactive_parser.set_defaults(func=interactive_command)
+
+    qa_parser = subparsers.add_parser("qa")
+    qa_parser.add_argument("--artifact-dir", default="artifacts")
+    qa_parser.add_argument("--device", default="cpu")
+    qa_parser.add_argument("--top-k", type=int, default=3)
+    qa_parser.set_defaults(func=qa_command)
 
     upload_parser = subparsers.add_parser("upload")
     upload_parser.add_argument("--artifact-dir", default="artifacts")
