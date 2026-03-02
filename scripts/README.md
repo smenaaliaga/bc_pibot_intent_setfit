@@ -17,7 +17,7 @@ pipeline_tag: text-classification
 Modelo multitarea para clasificación de texto en español usando un encoder compartido (`sentence-transformers`) y 3 cabezas clasificadoras:
 
 - `macro`: `"1"` o `"0"`
-- `intent`: `"value"` o `"method"`
+- `intent`: `"value"` , `"method"`, `"other"`
 - `context`: `"standalone"` o `"followup"`
 
 Este repositorio contiene artefactos de inferencia:

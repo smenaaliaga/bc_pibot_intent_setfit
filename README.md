@@ -96,6 +96,10 @@ Comando recomendado:
 python -m src.main train --data-dir data --output-dir artifacts --device cuda --val-size 0.15 --test-size 0.15 --epochs 8 --batch-size 16 --max-length 24 --lr-encoder 2e-5 --lr-heads 7e-4 --task-weight-macro 1.0 --task-weight-intent 1.0 --task-weight-context 1.8 --seed 42
 ```
 
+```bash
+python -m src.main train --data-dir data --output-dir artifacts --device cuda --epochs 20 --batch-size 10 --seed 42
+```
+
 También puedes parametrizar nombres de archivos y columnas:
 
 ```bash
