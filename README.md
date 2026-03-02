@@ -31,7 +31,7 @@ Cada CSV debe tener columnas obligatorias:
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
+.venv\Scripts\activate # source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -185,14 +185,14 @@ pip install huggingface-hub
 ### 7.2) Login en Hugging Face (una sola vez)
 
 ```bash
-huggingface-cli login
+hf auth login
 ```
 
 Pega el token cuando se solicite. Queda guardado en cache local de Hugging Face.
 
 ### 7.3) Subir los artefactos del modelo
 
-Después de `huggingface-cli login`, puedes subir **sin** pasar token explícito:
+Después de `hf auth login`, puedes subir **sin** pasar token explícito:
 
 ### Opción A: Desde `main.py` (sin token)
 
