@@ -426,41 +426,6 @@ que actividades incidieron en el crecimiento del imacec,standalone
 cual fue el valor del pib agropecuario,standalone
 quiero la cifra del pib de servicios financieros,standalone
 cual fue el dato de demanda interna en el pib,standalone
-dame el imacec desestacionalizado mas reciente,value
-cual fue el ultimo imacec con ajuste estacional,value
-muestrame la cifra del imacec ajustado estacionalmente,value
-quiero el valor del imacec corregido por estacionalidad,value
-dame el dato mas reciente del imacec desestacionalizado,value
-cual fue el ultimo dato del imacec sin ajuste estacional,value
-muestrame la cifra del imacec en serie original,value
-quiero el valor del imacec sin desestacionalizar,value
-dame el imacec con ajuste estacional de marzo 2024,value
-cual fue el imacec desestacionalizado en enero 2023,value
-muestrame el imacec sin ajuste estacional en julio 2022,value
-quiero la variacion mensual del imacec desestacionalizado,value
-dame la variacion en el margen del imacec con ajuste estacional,value
-cual fue el crecimiento mensual del imacec ajustado por estacionalidad,value
-muestrame el cambio mes a mes del imacec desestacionalizado,value
-dame la variacion interanual del imacec sin ajuste estacional,value
-cual fue el crecimiento anual del imacec en serie original,value
-muestrame el dato desestacionalizado de comercio en el imacec,value
-quiero la cifra con ajuste estacional de servicios en el imacec,value
-dame el valor sin ajuste estacional de mineria en el imacec,value
-cual fue el imacec no minero desestacionalizado,value
-muestrame el imacec de bienes corregido por estacionalidad,value
-quiero la serie original del imacec de industria,value
-dame la variacion en el margen del imacec no minero desestacionalizado,value
-cual fue la cifra del imacec de comercio con ajuste estacional en 2024,value
-muestrame el pib desestacionalizado del ultimo trimestre,value
-quiero el dato del pib con ajuste estacional,value
-dame la cifra del pib ajustado estacionalmente en 2024,value
-cual fue el pib en serie original del cuarto trimestre 2023,value
-muestrame la variacion trimestral del pib desestacionalizado,value
-dame el crecimiento respecto al periodo anterior del pib con ajuste estacional,value
-cual fue la variacion interanual del pib sin ajuste estacional,value
-quiero el pib por actividad con ajuste estacional,value
-dame la cifra de industria en el pib desestacionalizado,value
-muestrame el valor de comercio en el pib con ajuste estacional,value
 que actividad impulso el crecimiento del imacec desestacionalizado,standalone
 que sectores explicaron el crecimiento del imacec con ajuste estacional,standalone
 que actividad incidio en el imacec corregido por estacionalidad,standalone
@@ -486,3 +451,33 @@ que actividades explicaron el crecimiento de la economia desestacionalizada,stan
 que sector fue el principal motor del crecimiento con ajuste estacional,standalone
 que actividad tuvo mayor contribucion al crecimiento corregido por estacionalidad,standalone
 que rubros sostuvieron el crecimiento economico en serie desestacionalizada,standalone
+cuanto crecieron las regiones,standalone
+cuanto crecieron las regiones del pais,standalone
+como crecieron las regiones en el ultimo periodo,standalone
+cual fue el crecimiento de las regiones,standalone
+dame el crecimiento regional mas reciente,standalone
+como evolucionaron las regiones de chile,standalone
+cuales regiones crecieron mas,standalone
+que tanto crecieron las regiones este ano,standalone
+cual fue la variacion de las regiones,standalone
+dame la cifra de crecimiento de las regiones,standalone
+dame el imacec de este mes,standalone
+cual es el imacec de este mes,standalone
+entrega el imacec del mes actual,standalone
+muestrame el imacec de este mes,standalone
+quiero el dato del imacec de este mes,standalone
+cual fue el imacec del mes en curso,standalone
+dame el ultimo imacec mensual,standalone
+cual es el indice mensual de actividad economica de este mes,standalone
+necesito el imacec del mes actual,standalone
+muestrame el dato mas reciente del imacec,standalone
+cuanto crecio el imacec este mes,standalone
+cuanto aumento el imacec este mes,standalone
+como crecio el imacec en el mes actual,standalone
+cual fue el crecimiento del imacec este mes,standalone
+que variacion tuvo el imacec este mes,standalone
+cuanto vario el imacec en el mes en curso,standalone
+dame el crecimiento mensual del imacec actual,standalone
+cual fue la variacion del imacec del mes actual,standalone
+cual es el pib del trimestre en curso,standalone
+dame el pib del trimestre en curso,standalone
