@@ -75,25 +75,25 @@ Durante `train` se imprime:
 
 ### Configuración recomendada (según tus datasets actuales)
 
-Con los datasets actuales (macro más desbalanceado y context más pequeño), una configuración robusta es:
+Con los datasets actuales (intent más desbalanceado por clase minoritaria `other` y context más pequeño), una configuración más robusta para generalizar es:
 
 - `--device cuda`
 - `--val-size 0.1`
 - `--test-size 0.1`
-- `--epochs 6`
+- `--epochs 8`
 - `--batch-size 16`
-- `--max-length 32`
-- `--lr-encoder 2e-5`
-- `--lr-heads 8e-4`
-- `--task-weight-macro 1.2`
-- `--task-weight-intent 1.0`
-- `--task-weight-context 1.6`
+- `--lr-encoder 1.5e-5`
+- `--lr-heads 5e-4`
+- `--weight-decay 0.05`
+- `--task-weight-macro 1.0`
+- `--task-weight-intent 1.2`
+- `--task-weight-context 0.8`
 - `--seed 42`
 
 Comando recomendado:
 
 ```bash
-python -m src.main train --data-dir data --output-dir artifacts --device cuda --val-size 0.15 --test-size 0.15 --epochs 8 --batch-size 16 --max-length 24 --lr-encoder 2e-5 --lr-heads 7e-4 --task-weight-macro 1.0 --task-weight-intent 1.0 --task-weight-context 1.8 --seed 42
+python -m src.main train --data-dir data --output-dir artifacts --device cuda --val-size 0.1 --test-size 0.1 --epochs 8 --batch-size 16 --lr-encoder 1.5e-5 --lr-heads 5e-4 --weight-decay 0.05 --task-weight-macro 1.0 --task-weight-intent 1.2 --task-weight-context 0.8 --seed 42
 ```
 
 ```bash
