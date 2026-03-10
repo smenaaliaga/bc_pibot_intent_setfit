@@ -338,7 +338,6 @@ cuales son las fuentes de informacion del imacec,methodology
 dame sus fuentes de informacion del pib,methodology
 que fuente oficial publica el pib,methodology
 que fuente oficial publica el imacec,methodology
-que fuente oficial publica el pib,methodology
 donde estan los metadatos del imacec,methodology
 donde esta la ficha metodologica del pib,methodology
 donde veo la metodologia del imacec,methodology
@@ -607,66 +606,66 @@ mas de eso,other
 mas informacion,other
 mas contexto,other
 puedes darme su ultimo valor,value
-puedes darme su ?ltimo valor,value
+puedes darme su último valor,value
 puedes darme su ultima cifra,value
-puedes darme su ?ltima cifra,value
+puedes darme su última cifra,value
 puedes darme su ultimo dato,value
-puedes darme su ?ltimo dato,value
+puedes darme su último dato,value
 podrias darme su ultimo valor,value
-podr?as darme su ?ltimo valor,value
+podrías darme su último valor,value
 me puedes dar su ultimo valor,value
 me puedes dar su valor mas reciente,value
-me puedes dar su valor m?s reciente,value
+me puedes dar su valor más reciente,value
 puedes darme su valor mas reciente,value
-puedes darme su valor m?s reciente,value
+puedes darme su valor más reciente,value
 puedes darme la ultima cifra de eso,value
-puedes darme la ?ltima cifra de eso,value
+puedes darme la última cifra de eso,value
 puedes darme el ultimo valor de eso,value
-puedes darme el ?ltimo valor de eso,value
+puedes darme el último valor de eso,value
 puedes darme el ultimo dato de eso,value
-puedes darme el ?ltimo dato de eso,value
+puedes darme el último dato de eso,value
 puedes darme su lectura mas reciente,value
-puedes darme su lectura m?s reciente,value
+puedes darme su lectura más reciente,value
 puedes darme detalles de su calculo,methodology
-puedes darme detalles de su c?lculo,methodology
+puedes darme detalles de su cálculo,methodology
 dame detalles de su calculo,methodology
-dame detalles de su c?lculo,methodology
+dame detalles de su cálculo,methodology
 dame detalles del calculo de eso,methodology
-dame detalles del c?lculo de eso,methodology
+dame detalles del cálculo de eso,methodology
 me puedes explicar su calculo,methodology
-me puedes explicar su c?lculo,methodology
+me puedes explicar su cálculo,methodology
 puedes explicar su metodologia de calculo,methodology
-puedes explicar su metodolog?a de c?lculo,methodology
+puedes explicar su metodología de cálculo,methodology
 quiero entender su calculo,methodology
-quiero entender su c?lculo,methodology
+quiero entender su cálculo,methodology
 explica el calculo de lo anterior,methodology
-explica el c?lculo de lo anterior,methodology
+explica el cálculo de lo anterior,methodology
 como se calcula eso exactamente,methodology
-c?mo se calcula eso exactamente,methodology
+cómo se calcula eso exactamente,methodology
 cual es el metodo de calculo de eso,methodology
-cu?l es el m?todo de c?lculo de eso,methodology
+cuál es el método de cálculo de eso,methodology
 dame el detalle metodologico de eso,methodology
-dame el detalle metodol?gico de eso,methodology
+dame el detalle metodológico de eso,methodology
 puedes profundizar en su metodologia,methodology
-puedes profundizar en su metodolog?a,methodology
+puedes profundizar en su metodología,methodology
 necesito mas detalle de su metodologia de calculo,methodology
-necesito m?s detalle de su metodolog?a de c?lculo,methodology
+necesito más detalle de su metodología de cálculo,methodology
 detalle de como se calcula eso,methodology
-detalle de c?mo se calcula eso,methodology
+detalle de cómo se calcula eso,methodology
 quiero mas detalles de su metodologia,methodology
-quiero m?s detalles de su metodolog?a,methodology
+quiero más detalles de su metodología,methodology
 podrias detallar su calculo,methodology
-podr?as detallar su c?lculo,methodology
+podrías detallar su cálculo,methodology
 aclara su metodologia de calculo,methodology
-aclara su metodolog?a de c?lculo,methodology
+aclara su metodología de cálculo,methodology
 puedes dar mas detalles de la metodologia,methodology
-puedes dar m?s detalles de la metodolog?a,methodology
+puedes dar más detalles de la metodología,methodology
 desarrolla el calculo de eso,methodology
-desarrolla el c?lculo de eso,methodology
+desarrolla el cálculo de eso,methodology
 muestrame la metodologia de calculo de lo anterior,methodology
-mu?strame la metodolog?a de c?lculo de lo anterior,methodology
+muéstrame la metodología de cálculo de lo anterior,methodology
 detalla la formula de calculo de eso,methodology
-detalla la f?rmula de c?lculo de eso,methodology
+detalla la fórmula de cálculo de eso,methodology
 que actividad impulso el crecimiento de la economia,value
 que actividades impulsaron el crecimiento de la economia,value
 que actividad explico el crecimiento de la economia,value
@@ -785,9 +784,7 @@ que sector movio mas el crecimiento economico en el pib,value
 que actividad tuvo mayor contribucion al pib en 2024,value
 muestrame que sectores empujaron el pib en el ultimo trimestre,value
 dame la incidencia por actividad del pib mas reciente,value
-cual fue el pib regional de valparaiso,value
 dame el pibr de metropolitana,value
-muestrame la cifra del pibr de antofagasta,value
 cuanto fue el pib regional de biobio,value
 quiero el dato del pibr de ohiggins,value
 cual fue el valor del pibr de magallanes,value
@@ -833,7 +830,6 @@ cuanto fue el ahorro interno en 2024,value
 que componente del gasto impulso el pib,value
 que componente explico el crecimiento del pib en el ultimo trimestre,value
 cual fue el aporte del consumo al crecimiento,value
-dame la contribucion de la inversion al pib,value
 muestrame la incidencia de exportaciones en el crecimiento economico,value
 cuanto aporto demanda interna al pib,value
 cual fue la contribucion de consumo de gobierno al crecimiento,value
@@ -913,12 +909,9 @@ como evoluciono la industria en biobio en febrero de 2024,value
 dame el cambio en el margen de la mineria en antofagasta en enero de 2020,value
 como le fue a la economia chilena el ultimo mes,value
 como estuvo la economia chilena el ultimo mes,value
-que paso con la economia chilena el ultimo mes,value
 como evoluciono la economia chilena el ultimo mes,value
 como se comporto la economia chilena el ultimo mes,value
-cual fue el pib del trimestre en curso,value
 cuanto fue el pib del trimestre en curso,value
-dame el pib del trimestre en curso,value
 cual es el nivel del pib en el trimestre actual,value
 cuanto alcanzo el pib en el trimestre actual,value
 que explico el crecimiento del pib en 2025,value
@@ -926,13 +919,10 @@ que actividades contribuyeron al pib en 2025,value
 que factores incidieron en el pib en 2025,value
 que sectores aportaron al crecimiento del pib en 2025,value
 que incidio en el crecimiento del pib en 2025,value
-cuales fueron los aportes al crecimiento del pib,value
 cuales fueron las contribuciones al pib,value
 que sectores contribuyeron al pib,value
 que actividades aportaron al crecimiento del pib,value
 cuales fueron las incidencias en el pib,value
-a que se debio el crecimiento de la economia,value
-que explico el crecimiento de la economia,value
 que impulso el crecimiento de la economia,value
 que sectores impulsaron el crecimiento economico,value
 que actividades explicaron el crecimiento economico,value
@@ -962,6 +952,175 @@ que sector tuvo mayor incidencia en el pib,value
 que actividad explico mas el crecimiento economico,value
 que rubro aporto mas al crecimiento economico,value
 cuanto acelero el imacec en el tercer trimestre,value
-cual fue la aceleracion del imacec en el tercer trimestre,value
 cuanto aumento el crecimiento del imacec en el tercer trimestre,value
 cual fue la variacion del imacec en el tercer trimestre,value
+cuanto contribuyo la region metropolitana al crecimiento economico el mes pasado,value
+cuanto aporto la region metropolitana al crecimiento economico el mes pasado,value
+cuanto incidio la region metropolitana en el crecimiento economico del mes pasado,value
+cual fue la contribucion de la region metropolitana al crecimiento economico el mes pasado,value
+cual fue el aporte de la region metropolitana al crecimiento economico el mes pasado,value
+cual fue la incidencia de la region metropolitana en el crecimiento economico el mes pasado,value
+que tanto contribuyo la region metropolitana al crecimiento economico el mes pasado,value
+que tanto aporto la region metropolitana al crecimiento economico el mes pasado,value
+cuanto explico la region metropolitana del crecimiento economico el mes pasado,value
+que participacion tuvo la region metropolitana en el crecimiento economico del mes pasado,value
+cuanto contribuyo la region metropolitana al crecimiento economico en el ultimo mes,value
+cuanto aporto la region metropolitana al crecimiento economico en el ultimo mes,value
+cuanto incidio la region metropolitana en el crecimiento economico del ultimo mes,value
+cual fue la contribucion de la region metropolitana al crecimiento economico en el ultimo mes,value
+cual fue el aporte de la region metropolitana al crecimiento economico en el ultimo mes,value
+que tanto explico la region metropolitana del crecimiento economico en el ultimo mes,value
+cuanto contribuyo la region metropolitana al crecimiento economico en el mes mas reciente,value
+cuanto aporto la region metropolitana al crecimiento economico en el mes mas reciente,value
+cuanto incidio la region metropolitana en el crecimiento economico del mes mas reciente,value
+cual fue la contribucion de la region metropolitana al crecimiento economico en el mes mas reciente,value
+cuanto contribuyo la region metropolitana al crecimiento economico en el ultimo periodo,value
+cuanto aporto la region metropolitana al crecimiento economico en el ultimo periodo,value
+cuanto incidio la region metropolitana en el crecimiento economico del ultimo periodo,value
+cual fue la contribucion de la region metropolitana al crecimiento economico en el ultimo periodo,value
+cuanto contribuyo la region metropolitana al crecimiento economico en marzo de 2024,value
+cuanto aporto la region metropolitana al crecimiento economico en marzo de 2024,value
+cuanto incidio la region metropolitana en el crecimiento economico de marzo de 2024,value
+cual fue la contribucion de la region metropolitana al crecimiento economico en marzo de 2024,value
+cual fue el aporte de la region metropolitana al crecimiento economico en marzo de 2024,value
+cuanto contribuyo la region metropolitana al crecimiento economico en enero de 2023,value
+cuanto aporto la region metropolitana al crecimiento economico en enero de 2023,value
+cuanto incidio la region metropolitana en el crecimiento economico de enero de 2023,value
+cual fue la contribucion de la region metropolitana al crecimiento economico en enero de 2023,value
+cuanto contribuyo la region metropolitana al crecimiento economico en 2024,value
+cuanto aporto la region metropolitana al crecimiento economico en 2024,value
+cuanto incidio la region metropolitana en el crecimiento economico de 2024,value
+cual fue la contribucion de la region metropolitana al crecimiento economico en 2024,value
+cual fue el aporte de la region metropolitana al crecimiento economico en 2024,value
+que tanto explico la region metropolitana del crecimiento economico en 2024,value
+cuanto contribuyo la region metropolitana al crecimiento economico en 2023,value
+cuanto aporto la region metropolitana al crecimiento economico en 2023,value
+cuanto incidio la region metropolitana en el crecimiento economico de 2023,value
+cual fue la contribucion de la region metropolitana al crecimiento economico en 2023,value
+cuanto contribuyeron las regiones al crecimiento economico el mes pasado,value
+cuanto aportaron las regiones al crecimiento economico el mes pasado,value
+cuanto incidieron las regiones en el crecimiento economico del mes pasado,value
+cuales fueron las contribuciones regionales al crecimiento economico el mes pasado,value
+cuales fueron los aportes regionales al crecimiento economico el mes pasado,value
+que regiones explicaron el crecimiento economico el mes pasado,value
+que regiones impulsaron el crecimiento economico el mes pasado,value
+que regiones incidieron en el crecimiento economico el mes pasado,value
+que regiones aportaron al crecimiento economico el mes pasado,value
+cual region contribuyo mas al crecimiento economico el mes pasado,value
+cual region aporto mas al crecimiento economico el mes pasado,value
+cual region incidio mas en el crecimiento economico el mes pasado,value
+cual region contribuyo menos al crecimiento economico el mes pasado,value
+cual region aporto menos al crecimiento economico el mes pasado,value
+cual region incidio menos en el crecimiento economico el mes pasado,value
+cuanto contribuyo valparaiso al crecimiento economico el mes pasado,value
+cuanto aporto valparaiso al crecimiento economico el mes pasado,value
+cuanto incidio valparaiso en el crecimiento economico del mes pasado,value
+cuanto contribuyo antofagasta al crecimiento economico el mes pasado,value
+cuanto aporto antofagasta al crecimiento economico el mes pasado,value
+cuanto incidio antofagasta en el crecimiento economico del mes pasado,value
+cuanto contribuyo biobio al crecimiento economico el mes pasado,value
+cuanto aporto biobio al crecimiento economico el mes pasado,value
+cuanto incidio biobio en el crecimiento economico del mes pasado,value
+cuanto contribuyo los lagos al crecimiento economico el mes pasado,value
+cuanto aporto los lagos al crecimiento economico el mes pasado,value
+cuanto incidio los lagos en el crecimiento economico del mes pasado,value
+cuanto contribuyo aysen al crecimiento economico el mes pasado,value
+cuanto aporto aysen al crecimiento economico el mes pasado,value
+cuanto incidio aysen en el crecimiento economico del mes pasado,value
+cuanto contribuyo magallanes al crecimiento economico el mes pasado,value
+cuanto aporto magallanes al crecimiento economico el mes pasado,value
+cuanto incidio magallanes en el crecimiento economico del mes pasado,value
+cuanto contribuyo la region metropolitana al crecimiento regional,value
+cuanto aporto la region metropolitana al crecimiento regional,value
+cuanto incidio la region metropolitana en el crecimiento regional,value
+cual fue la contribucion de la region metropolitana al crecimiento regional,value
+cual fue el aporte de la region metropolitana al crecimiento regional,value
+cuanto contribuyo la region metropolitana al crecimiento del pais,value
+cuanto aporto la region metropolitana al crecimiento del pais,value
+cuanto incidio la region metropolitana en el crecimiento del pais,value
+cual fue la contribucion de la region metropolitana al crecimiento del pais,value
+cual fue el aporte de la region metropolitana al crecimiento del pais,value
+que tanto contribuyo la region metropolitana al crecimiento del pais,value
+cuanto crecieron las regiones el mes pasado,value
+cuanto variaron las regiones el mes pasado,value
+cual fue el crecimiento regional el mes pasado,value
+cual fue la variacion de las regiones el mes pasado,value
+dame la variacion regional del mes pasado,value
+muestrame el crecimiento de las regiones en el ultimo mes,value
+quiero el cambio regional del mes pasado,value
+como crecieron las regiones el mes pasado,value
+como variaron las regiones el mes pasado,value
+como le fue a las regiones el mes pasado,value
+cual fue el crecimiento de la region metropolitana el mes pasado,value
+cuanto crecio la region metropolitana el mes pasado,value
+cuanto vario la region metropolitana el mes pasado,value
+cual fue la variacion de la region metropolitana el mes pasado,value
+como le fue a la region metropolitana el mes pasado,value
+como evoluciono la region metropolitana el mes pasado,value
+que resultado tuvo la region metropolitana el mes pasado,value
+cual fue el dato de la region metropolitana el mes pasado,value
+dame el crecimiento de la region metropolitana en el ultimo mes,value
+muestrame la variacion de la region metropolitana en el ultimo mes,value
+cuanto contribuyo la mineria al crecimiento de la region metropolitana el mes pasado,value
+cuanto aporto la mineria al crecimiento de la region metropolitana el mes pasado,value
+cuanto incidio la mineria en el crecimiento de la region metropolitana el mes pasado,value
+cual fue la contribucion de la mineria al crecimiento de la region metropolitana el mes pasado,value
+cuanto contribuyo el comercio al crecimiento de la region metropolitana el mes pasado,value
+cuanto aporto el comercio al crecimiento de la region metropolitana el mes pasado,value
+cuanto incidio el comercio en el crecimiento de la region metropolitana el mes pasado,value
+cual fue la contribucion del comercio al crecimiento de la region metropolitana el mes pasado,value
+cuanto contribuyeron los servicios al crecimiento de la region metropolitana el mes pasado,value
+cuanto aportaron los servicios al crecimiento de la region metropolitana el mes pasado,value
+cuanto incidieron los servicios en el crecimiento de la region metropolitana el mes pasado,value
+cual fue la contribucion de los servicios al crecimiento de la region metropolitana el mes pasado,value
+cuanto contribuyeron los sectores economicos al crecimiento de la region metropolitana el mes pasado,value
+cuanto aportaron los sectores economicos al crecimiento de la region metropolitana el mes pasado,value
+cuanto incidieron los sectores economicos en el crecimiento de la region metropolitana el mes pasado,value
+cuales fueron las contribuciones sectoriales al crecimiento de la region metropolitana el mes pasado,value
+cuales fueron los aportes sectoriales al crecimiento de la region metropolitana el mes pasado,value
+que sectores explicaron el crecimiento de la region metropolitana el mes pasado,value
+que sectores impulsaron el crecimiento de la region metropolitana el mes pasado,value
+que sectores incidieron en el crecimiento de la region metropolitana el mes pasado,value
+cual sector contribuyo mas al crecimiento de la region metropolitana el mes pasado,value
+cual sector aporto mas al crecimiento de la region metropolitana el mes pasado,value
+cual sector incidio mas en el crecimiento de la region metropolitana el mes pasado,value
+cual sector contribuyo menos al crecimiento de la region metropolitana el mes pasado,value
+cual sector aporto menos al crecimiento de la region metropolitana el mes pasado,value
+cual sector incidio menos en el crecimiento de la region metropolitana el mes pasado,value
+cuanto contribuyo la mineria al crecimiento de antofagasta el mes pasado,value
+cuanto aporto la mineria al crecimiento de antofagasta el mes pasado,value
+cuanto incidio la mineria en el crecimiento de antofagasta el mes pasado,value
+cual fue la contribucion de la mineria al crecimiento de antofagasta el mes pasado,value
+cuanto contribuyo el comercio al crecimiento de valparaiso el mes pasado,value
+cuanto aporto el comercio al crecimiento de valparaiso el mes pasado,value
+cuanto incidio el comercio en el crecimiento de valparaiso el mes pasado,value
+cual fue la contribucion del comercio al crecimiento de valparaiso el mes pasado,value
+cuanto contribuyeron los servicios al crecimiento de biobio el mes pasado,value
+cuanto aportaron los servicios al crecimiento de biobio el mes pasado,value
+cuanto incidieron los servicios en el crecimiento de biobio el mes pasado,value
+cual fue la contribucion de los servicios al crecimiento de biobio el mes pasado,value
+como se calcula la contribucion regional al crecimiento economico,methodology
+como se calcula el aporte regional al crecimiento economico,methodology
+como se mide la incidencia de una region en el crecimiento economico,methodology
+que significa la contribucion de una region al crecimiento economico,methodology
+que significa el aporte regional al crecimiento economico,methodology
+como interpretar la incidencia de la region metropolitana en el crecimiento economico,methodology
+como se calcula la contribucion de la region metropolitana al crecimiento economico,methodology
+como se calcula el aporte de la region metropolitana al crecimiento economico,methodology
+como se estima la incidencia regional en el crecimiento economico,methodology
+que metodologia se usa para medir la contribucion regional al crecimiento,methodology
+que significa que una region contribuya al crecimiento economico,methodology
+como interpretar que una region tenga contribucion negativa al crecimiento,methodology
+que diferencia hay entre crecimiento regional y contribucion regional,methodology
+como se calcula la contribucion de los sectores economicos al crecimiento regional,methodology
+como se mide la incidencia sectorial en una region,methodology
+que significa aporte sectorial al crecimiento de una region,methodology
+como interpretar las contribuciones sectoriales de la region metropolitana,methodology
+como se calcula la contribucion de la mineria al crecimiento de antofagasta,methodology
+como se calcula la incidencia del comercio en el crecimiento de valparaiso,methodology
+como se interpreta el crecimiento regional del mes pasado,methodology
+dame mas detalles de la contribucion regional,methodology
+explica mejor como se calcula la contribucion regional,methodology
+quiero entender la metodologia de contribucion regional,methodology
+podrias detallar el calculo de la incidencia regional,methodology
+quiero mas detalle sobre el aporte regional al crecimiento,methodology

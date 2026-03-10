@@ -59,6 +59,7 @@ dmypy.json
 
 # Model artifacts and large files
 artifacts/
+models/
 *.pt
 *.pth
 *.bin

@@ -1,0 +1,5 @@
+row,text,label_current,label_suggested,score_methodology,score_value,score_other,confidence,reason
+122,quiero la lectura de lo anterior,value,other,0,0,1,high,high-precision rule mismatch
+351,explicame mejor lo anterior,methodology,other,0,0,1,high,high-precision rule mismatch
+352,quiero que me expliques lo anterior,methodology,other,0,0,1,high,high-precision rule mismatch
+377,como se mide la variacion del imacec en el ultimo periodo,methodology,value,0,2,0,high,high-precision rule mismatch

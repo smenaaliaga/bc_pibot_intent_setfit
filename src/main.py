@@ -62,6 +62,10 @@ def train_command(args) -> None:
         device=args.device,
         output_dir=Path(args.output_dir),
         seed=args.seed,
+        use_lora=args.use_lora,
+        lora_r=args.lora_r,
+        lora_alpha=args.lora_alpha,
+        lora_dropout=args.lora_dropout,
     )
 
     seed_everything(train_config.seed)
@@ -86,7 +90,14 @@ def train_command(args) -> None:
         label_col=data_config.label_col,
     )
 
-    encoder = SharedEncoder(model_name=train_config.model_name, device=train_config.device)
+    encoder = SharedEncoder(
+        model_name=train_config.model_name,
+        device=train_config.device,
+        use_lora=train_config.use_lora,
+        lora_r=train_config.lora_r,
+        lora_alpha=train_config.lora_alpha,
+        lora_dropout=train_config.lora_dropout,
+    )
     embedding_dim = encoder.encode(["_probe_"], convert_to_tensor=True).shape[-1]
     num_classes_by_task = {task: len(mapping) for task, mapping in label_maps.items()}
     multitask_model = MultiTaskClassifier(embedding_dim=embedding_dim, num_classes_by_task=num_classes_by_task)
@@ -193,7 +204,7 @@ def build_parser() -> argparse.ArgumentParser:
     train_parser.add_argument("--context-file", default="dataset_context.csv")
     train_parser.add_argument("--text-col", default="text")
     train_parser.add_argument("--label-col", default="label")
-    train_parser.add_argument("--output-dir", default="artifacts")
+    train_parser.add_argument("--output-dir", default="models/artifacts")
     train_parser.add_argument("--model-name", default="sentence-transformers/all-MiniLM-L6-v2")
     train_parser.add_argument("--epochs", type=int, default=3)
     train_parser.add_argument("--batch-size", type=int, default=16)
@@ -208,10 +219,14 @@ def build_parser() -> argparse.ArgumentParser:
     train_parser.add_argument("--test-size", type=float, default=0.1)
     train_parser.add_argument("--seed", type=int, default=42)
     train_parser.add_argument("--device", default="cpu")
+    train_parser.add_argument("--use-lora", action="store_true", default=True, help="Enable LoRA for encoder fine-tuning")
+    train_parser.add_argument("--lora-r", type=int, default=8, help="LoRA rank")
+    train_parser.add_argument("--lora-alpha", type=int, default=16, help="LoRA alpha scaling")
+    train_parser.add_argument("--lora-dropout", type=float, default=0.1, help="LoRA dropout rate")
     train_parser.set_defaults(func=train_command)
 
     evaluate_parser = subparsers.add_parser("evaluate")
-    evaluate_parser.add_argument("--artifact-dir", default="artifacts")
+    evaluate_parser.add_argument("--artifact-dir", default="models/artifacts")
     evaluate_parser.add_argument("--data-dir", default="data")
     evaluate_parser.add_argument("--macro-file", default="dataset_macro.csv")
     evaluate_parser.add_argument("--intent-file", default="dataset_intent.csv")
@@ -226,25 +241,25 @@ def build_parser() -> argparse.ArgumentParser:
     evaluate_parser.set_defaults(func=evaluate_command)
 
     test_parser = subparsers.add_parser("test")
-    test_parser.add_argument("--artifact-dir", default="artifacts")
+    test_parser.add_argument("--artifact-dir", default="models/artifacts")
     test_parser.add_argument("--text", action="append", help="Repeat --text to send multiple inputs")
     test_parser.add_argument("--texts-file", help="UTF-8 file with one text per line")
     test_parser.add_argument("--device", default="cpu")
     test_parser.set_defaults(func=test_command)
 
     interactive_parser = subparsers.add_parser("interactive")
-    interactive_parser.add_argument("--artifact-dir", default="artifacts")
+    interactive_parser.add_argument("--artifact-dir", default="models/artifacts")
     interactive_parser.add_argument("--device", default="cpu")
     interactive_parser.set_defaults(func=interactive_command)
 
     qa_parser = subparsers.add_parser("qa")
-    qa_parser.add_argument("--artifact-dir", default="artifacts")
+    qa_parser.add_argument("--artifact-dir", default="models/artifacts")
     qa_parser.add_argument("--device", default="cpu")
     qa_parser.add_argument("--top-k", type=int, default=3)
     qa_parser.set_defaults(func=qa_command)
 
     upload_parser = subparsers.add_parser("upload")
-    upload_parser.add_argument("--artifact-dir", default="artifacts")
+    upload_parser.add_argument("--artifact-dir", default="models/artifacts")
     upload_parser.add_argument("--repo-id", required=True)
     upload_parser.add_argument("--hf-token")
     upload_parser.add_argument("--private", action="store_true")

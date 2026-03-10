@@ -88,7 +88,7 @@ Salida esperada (ejemplo):
 Con este proyecto clonado, también puedes probar:
 
 ```bash
-python -m src.main test --artifact-dir artifacts --text "quiero pagar mi factura" --device cpu
+python -m src.main test --artifact-dir models/artifacts --text "quiero pagar mi factura" --device cpu
 ```
 
 ## Notas

@@ -1,12 +1,18 @@
 import argparse
+import sys
 from pathlib import Path
+
+# Ensure project root is importable when running this script directly.
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.hub.upload import upload_artifacts_to_hf
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Upload multitask artifacts to Hugging Face Hub")
-    parser.add_argument("--artifact-dir", default="artifacts")
+    parser.add_argument("--artifact-dir", default="models/artifacts")
     parser.add_argument("--repo-id", required=True, help="e.g. username/bc-pibot-intent-setfit")
     parser.add_argument("--hf-token", help="Optional. If omitted, uses token from `huggingface-cli login`.")
     parser.add_argument("--private", action="store_true")

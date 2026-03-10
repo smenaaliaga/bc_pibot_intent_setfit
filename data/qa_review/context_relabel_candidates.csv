@@ -1,0 +1,7 @@
+row,text,label_current,label_suggested,score_followup,score_standalone_anchor,confidence,reason
+253,ahora dame la cifra del pib,followup,standalone,0,1,high,high-precision rule mismatch
+254,ahora dame el valor del pib,followup,standalone,0,1,high,high-precision rule mismatch
+255,ahora dame el dato del pib,followup,standalone,0,1,high,high-precision rule mismatch
+256,ahora dame la cifra del imacec,followup,standalone,0,1,high,high-precision rule mismatch
+257,ahora dame el valor del imacec,followup,standalone,0,1,high,high-precision rule mismatch
+258,ahora dame el dato del imacec,followup,standalone,0,1,high,high-precision rule mismatch

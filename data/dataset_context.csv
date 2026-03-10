@@ -258,8 +258,6 @@ ahora dame el valor del imacec,followup
 ahora dame el dato del imacec,followup
 ahora dime cual fue el pib de 2024,standalone
 ahora dime cual fue el imacec de enero 2024,standalone
-ahora explicame que es el pib,standalone
-ahora explicame que es el imacec,standalone
 ahora explicame como se calcula el pib,standalone
 ahora explicame como se calcula el imacec,standalone
 cuanto crecio la economia,standalone
@@ -334,48 +332,48 @@ y ahora sin ajuste estacional,followup
 y el mismo dato pero desestacionalizado,followup
 y el mismo dato pero serie original,followup
 puedes darme su ultimo valor,followup
-puedes darme su ?ltimo valor,followup
+puedes darme su último valor,followup
 puedes darme su ultima cifra,followup
-puedes darme su ?ltima cifra,followup
+puedes darme su última cifra,followup
 puedes darme su ultimo dato,followup
-puedes darme su ?ltimo dato,followup
+puedes darme su último dato,followup
 podrias darme su ultimo valor,followup
-podr?as darme su ?ltimo valor,followup
+podrías darme su último valor,followup
 me puedes dar su ultimo valor,followup
 me puedes dar su valor mas reciente,followup
-me puedes dar su valor m?s reciente,followup
+me puedes dar su valor más reciente,followup
 puedes darme su valor mas reciente,followup
-puedes darme su valor m?s reciente,followup
+puedes darme su valor más reciente,followup
 puedes darme la ultima cifra de eso,followup
-puedes darme la ?ltima cifra de eso,followup
+puedes darme la última cifra de eso,followup
 puedes darme el ultimo valor de eso,followup
-puedes darme el ?ltimo valor de eso,followup
+puedes darme el último valor de eso,followup
 puedes darme el ultimo dato de eso,followup
-puedes darme el ?ltimo dato de eso,followup
+puedes darme el último dato de eso,followup
 puedes darme su lectura mas reciente,followup
-puedes darme su lectura m?s reciente,followup
+puedes darme su lectura más reciente,followup
 puedes darme detalles de su calculo,followup
-puedes darme detalles de su c?lculo,followup
+puedes darme detalles de su cálculo,followup
 dame detalles de su calculo,followup
-dame detalles de su c?lculo,followup
+dame detalles de su cálculo,followup
 dame detalles del calculo de eso,followup
-dame detalles del c?lculo de eso,followup
+dame detalles del cálculo de eso,followup
 me puedes explicar su calculo,followup
-me puedes explicar su c?lculo,followup
+me puedes explicar su cálculo,followup
 quiero entender su calculo,followup
-quiero entender su c?lculo,followup
+quiero entender su cálculo,followup
 explica el calculo de lo anterior,followup
-explica el c?lculo de lo anterior,followup
+explica el cálculo de lo anterior,followup
 como se calcula eso exactamente,followup
-c?mo se calcula eso exactamente,followup
+cómo se calcula eso exactamente,followup
 cual es el metodo de calculo de eso,followup
-cu?l es el m?todo de c?lculo de eso,followup
+cuál es el método de cálculo de eso,followup
 dame el detalle metodologico de eso,followup
-dame el detalle metodol?gico de eso,followup
+dame el detalle metodológico de eso,followup
 detalle de como se calcula eso,followup
-detalle de c?mo se calcula eso,followup
+detalle de cómo se calcula eso,followup
 podrias detallar su calculo,followup
-podr?as detallar su c?lculo,followup
+podrías detallar su cálculo,followup
 que actividad impulso el crecimiento de la economia,standalone
 que actividades impulsaron el crecimiento de la economia,standalone
 que actividad explico el crecimiento de la economia,standalone
@@ -412,7 +410,6 @@ cuanto crecio el sector financiero en el 3er trimestre,standalone
 dame la cifra del sector financiero en el 3er trimestre,standalone
 cuanto crecio la economia en 2024,standalone
 quiero saber cuanto crecio la economia en 2024,standalone
-cual fue el crecimiento de la economia en 2024,standalone
 cuanto crecio el pib en 2024,standalone
 que actividades impulsaron el crecimiento de la economia en 2024,standalone
 cual fue la actividad que mas impulso la economia en 2024,standalone
@@ -481,18 +478,12 @@ dame el crecimiento mensual del imacec actual,standalone
 cual fue la variacion del imacec del mes actual,standalone
 cual es el pib del trimestre en curso,standalone
 dame el pib del trimestre en curso,standalone
-cuanto crecio el imacec este mes,standalone
-cuanto aumento el imacec este mes,standalone
 cuanto vario el imacec este mes,standalone
 cuanto fue la variacion del imacec este mes,standalone
-cual fue el crecimiento del imacec este mes,standalone
 como crecio el imacec este mes,standalone
 cual fue la cifra del imacec este mes,standalone
-que variacion tuvo el imacec este mes,standalone
 cuanto crecio el imacec en el ultimo mes disponible,standalone
 cual fue la variacion mensual del imacec este mes,standalone
-dame el imacec de este mes,standalone
-cual es el imacec de este mes,standalone
 cual fue el imacec de este mes,standalone
 dame la cifra del imacec de este mes,standalone
 cual es el valor del imacec este mes,standalone
@@ -515,7 +506,6 @@ como acelero el imacec el tercer trimestre,standalone
 de que manera acelero el imacec en el tercer trimestre,standalone
 como se acelero el imacec durante el tercer trimestre,standalone
 que paso con la aceleracion del imacec en el tercer trimestre,standalone
-como acelero el imacec el tercer trimestre,standalone
 y cual fue el que menos crecio,followup
 y cual fue el que menos aumento,followup
 y cual tuvo el menor crecimiento,followup
@@ -556,3 +546,563 @@ quien tuvo el mayor aumento,followup
 cual incidio mas en el crecimiento,followup
 quien incidio mas en el crecimiento,followup
 cual tuvo la mayor incidencia,followup
+texto,label
+cuanto contribuyo la mineria en el pib,standalone
+cuanto vario la mineria en el pib,standalone
+cuanto contribuyeron los sectores economicos al crecimiento de la region metropolitana,standalone
+cuanto contribuyo la mineria al crecimiento de antofagasta,standalone
+cuanto aporto la mineria al pib,standalone
+cuanto incidio la mineria en el pib,standalone
+cual fue la contribucion de la mineria al pib,standalone
+cual fue la incidencia de la mineria en el pib,standalone
+cuanto explico la mineria del crecimiento del pib,standalone
+cuanto empujo la mineria el crecimiento del pib,standalone
+cuanto aporto el comercio al pib,standalone
+cuanto contribuyo el comercio al crecimiento del pib,standalone
+cuanto incidieron los servicios en el pib,standalone
+cuanto aporto la industria al crecimiento del pib,standalone
+cuanto contribuyo la construccion al pib,standalone
+cuanto aportaron los sectores al crecimiento del pib,standalone
+cuanto contribuyeron las actividades economicas al crecimiento del pib,standalone
+cuales fueron las contribuciones sectoriales al pib,standalone
+que sectores contribuyeron al crecimiento del pib,standalone
+que actividades incidieron en el crecimiento del pib,standalone
+que sectores explicaron el crecimiento del pib,standalone
+que rubros aportaron al pib,standalone
+que componentes impulsaron el crecimiento del pib,standalone
+cual fue el sector que mas contribuyo al pib,standalone
+cual fue la actividad que mas incidio en el pib,standalone
+cual fue el rubro que mas aporto al crecimiento del pib,standalone
+cual fue el sector de menor contribucion al pib,standalone
+cual fue la actividad que menos incidio en el pib,standalone
+que sector resto crecimiento al pib,standalone
+hubo algun sector que restara crecimiento al pib,standalone
+cuanto contribuyo la mineria al crecimiento economico,standalone
+cuanto aporto la mineria al crecimiento economico,standalone
+cuanto incidio la mineria en el crecimiento economico,standalone
+cuanto explico la mineria del crecimiento economico,standalone
+cual fue la contribucion de la mineria al crecimiento economico,standalone
+cuanto vario la mineria,standalone
+cuanto crecio la mineria,standalone
+cual fue la variacion de la mineria,standalone
+cual fue el crecimiento de la mineria,standalone
+cuanto vario el sector minero,standalone
+cuanto crecio el sector minero,standalone
+cual fue la variacion interanual de la mineria,standalone
+cual fue la variacion mensual de la mineria,standalone
+cual fue la variacion en el margen de la mineria,standalone
+cuanto vario la mineria en 2024,standalone
+cuanto crecio la mineria en 2024,standalone
+cuanto vario la mineria en el ultimo trimestre,standalone
+cuanto crecio la mineria en marzo 2024,standalone
+cual fue el dato mas reciente de la mineria,standalone
+dame la cifra mas reciente de la mineria,standalone
+cuanto contribuyeron los sectores economicos al crecimiento de antofagasta,standalone
+cuanto contribuyeron los sectores economicos al crecimiento de aysen,standalone
+cuanto contribuyeron los sectores economicos al crecimiento de valparaiso,standalone
+cuanto contribuyeron los sectores economicos al crecimiento del biobio,standalone
+cuanto contribuyeron los sectores economicos al crecimiento de tarapaca,standalone
+cuanto aportaron los sectores al crecimiento de la region metropolitana,standalone
+cuanto incidieron los sectores en el crecimiento de la region metropolitana,standalone
+cuales fueron las contribuciones sectoriales en la region metropolitana,standalone
+que sectores explicaron el crecimiento de la region metropolitana,standalone
+que actividades impulsaron el crecimiento de la region metropolitana,standalone
+cual fue el sector que mas contribuyo al crecimiento de la region metropolitana,standalone
+cual fue el sector que menos contribuyo al crecimiento de la region metropolitana,standalone
+cuanto contribuyo la mineria al crecimiento de la region metropolitana,standalone
+cuanto contribuyo el comercio al crecimiento de la region metropolitana,standalone
+cuanto contribuyeron los servicios al crecimiento de la region metropolitana,standalone
+cuanto aporto la industria al crecimiento de la region metropolitana,standalone
+cuanto incidio la construccion en el crecimiento de la region metropolitana,standalone
+cuanto contribuyo la mineria al crecimiento de antofagasta,standalone
+cuanto aporto la mineria al crecimiento de antofagasta,standalone
+cuanto incidio la mineria en el crecimiento de antofagasta,standalone
+cual fue la contribucion de la mineria al crecimiento de antofagasta,standalone
+cual fue la incidencia de la mineria en el crecimiento de antofagasta,standalone
+que tanto explico la mineria del crecimiento de antofagasta,standalone
+que aporte tuvo la mineria en el crecimiento de antofagasta,standalone
+cual fue el rol de la mineria en el crecimiento de antofagasta,standalone
+cuanto aporto el comercio al crecimiento de antofagasta,standalone
+cuanto incidieron los servicios en el crecimiento de antofagasta,standalone
+que sectores contribuyeron al crecimiento de antofagasta,standalone
+que actividades explicaron el crecimiento de antofagasta,standalone
+cual fue el sector que mas contribuyo al crecimiento de antofagasta,standalone
+cual fue el sector que menos contribuyo al crecimiento de antofagasta,standalone
+cuanto contribuyo la mineria al crecimiento de atacama,standalone
+cuanto contribuyo la mineria al crecimiento de coquimbo,standalone
+cuanto contribuyo la mineria al crecimiento de tarapaca,standalone
+cuanto contribuyo la mineria al crecimiento de los lagos,standalone
+cuanto contribuyo la mineria al crecimiento de chile,standalone
+cuanto contribuyeron los sectores al crecimiento economico,standalone
+cuanto aportaron los sectores al crecimiento economico,standalone
+cuanto incidieron los sectores en el crecimiento economico,standalone
+cuales fueron las contribuciones de los sectores al crecimiento economico,standalone
+que sectores impulsaron el crecimiento economico,standalone
+que actividades explicaron el crecimiento economico,standalone
+que rubros sostuvieron el crecimiento economico,standalone
+cual fue el principal aporte sectorial al crecimiento economico,standalone
+cual fue la principal incidencia sectorial en el crecimiento economico,standalone
+que sector fue el principal motor del crecimiento economico,standalone
+que actividad lidero el crecimiento economico,standalone
+que sector tuvo la mayor contribucion al crecimiento economico,standalone
+que actividad tuvo la menor contribucion al crecimiento economico,standalone
+que sector presento la menor incidencia en el crecimiento economico,standalone
+que actividad explico mas el crecimiento economico,standalone
+que actividad explico menos el crecimiento economico,standalone
+cuanto contribuyo la demanda interna al pib,standalone
+cuanto aporto el consumo al pib,standalone
+cuanto incidio la inversion en el pib,standalone
+cual fue la contribucion del consumo de hogares al pib,standalone
+cual fue la incidencia de la formacion bruta de capital fijo en el pib,standalone
+cuanto contribuyeron las exportaciones netas al pib,standalone
+que componente del gasto mas aporto al pib,standalone
+que componente del gasto menos aporto al pib,standalone
+cuanto vario el consumo privado en el pib,standalone
+cuanto vario la inversion en el pib,standalone
+dame la contribucion de mineria al pib en 2024,standalone
+dame la contribucion de comercio al pib en 2024,standalone
+dame la contribucion de servicios al pib en 2024,standalone
+dame la variacion de mineria en el pib en 2024,standalone
+dame la variacion de comercio en el pib en 2024,standalone
+dame la contribucion sectorial al pib en 2024,standalone
+dame la contribucion sectorial al crecimiento economico en 2024,standalone
+dame las contribuciones sectoriales de antofagasta en 2024,standalone
+dame las contribuciones sectoriales de la region metropolitana en 2024,standalone
+muestrame cuanto contribuyo la mineria al crecimiento de antofagasta en 2024,standalone
+muestrame cuanto contribuyeron los sectores al crecimiento de la region metropolitana en 2024,standalone
+ok cual fue el pib de 2024,standalone
+ok cual fue el imacec de enero 2024,standalone
+ok cual fue la inflacion de 2024,standalone
+ok dime la variacion de la mineria en 2024,standalone
+ok dime cuanto contribuyo la mineria al pib,standalone
+ok dime cuanto contribuyo la mineria al crecimiento de antofagasta,standalone
+ahora dime cual fue el pib de 2024,standalone
+ahora dime cual fue el imacec de enero 2024,standalone
+ahora dime cuanto crecio la mineria,standalone
+ahora dime cuanto contribuyo la mineria al pib,standalone
+ahora dime cuanto contribuyeron los sectores a la region metropolitana,standalone
+y cual fue el pib de 2024,standalone
+y cual fue el imacec de enero 2024,standalone
+y cuanto crecio la mineria en 2024,standalone
+y cuanto contribuyo la mineria al pib,standalone
+y cuanto contribuyo la mineria al crecimiento de antofagasta,standalone
+y dame la variacion de comercio en 2024,standalone
+y ahora dame su contribucion,followup
+y ahora dame su incidencia,followup
+y ahora dame su aporte,followup
+y ahora dame su variacion,followup
+y ahora dame su crecimiento,followup
+y ahora dame la contribucion de eso,followup
+y ahora dame la incidencia de eso,followup
+y ahora dame el aporte de eso,followup
+y ahora dame la variacion de eso,followup
+y ahora dame el crecimiento de eso,followup
+ahora dame su contribucion,followup
+ahora dame su incidencia,followup
+ahora dame su aporte,followup
+ahora dame su variacion,followup
+ahora dame su crecimiento,followup
+ahora quiero su contribucion,followup
+ahora quiero su incidencia,followup
+ahora quiero su aporte,followup
+ahora quiero su variacion,followup
+ahora quiero su crecimiento,followup
+ok ahora dame su contribucion,followup
+ok ahora dame su incidencia,followup
+ok ahora dame su aporte,followup
+ok ahora dame su variacion,followup
+ok ahora dame su crecimiento,followup
+perfecto ahora dame su contribucion,followup
+perfecto ahora dame su incidencia,followup
+perfecto ahora dame su variacion,followup
+entonces ahora dame su contribucion,followup
+entonces ahora dame su incidencia,followup
+entonces ahora dame su variacion,followup
+pero ahora dame su contribucion,followup
+pero ahora dame su incidencia,followup
+pero ahora dame su variacion,followup
+y su contribucion,followup
+y su incidencia,followup
+y su aporte,followup
+y su variacion,followup
+y su crecimiento,followup
+y la contribucion de eso,followup
+y la incidencia de eso,followup
+y el aporte de eso,followup
+y la variacion de eso,followup
+y el crecimiento de eso,followup
+y cuanto contribuyo eso,followup
+y cuanto incidio eso,followup
+y cuanto aporto eso,followup
+y cuanto vario eso,followup
+y cuanto crecio eso,followup
+y cuanto contribuyo lo anterior,followup
+y cuanto incidio lo anterior,followup
+y cuanto aporto lo anterior,followup
+y cuanto vario lo anterior,followup
+y cuanto crecio lo anterior,followup
+y cuanto contribuyo ese sector,followup
+y cuanto incidio ese sector,followup
+y cuanto aporto esa actividad,followup
+y cuanto vario esa actividad,followup
+y cuanto crecio esa actividad,followup
+y cuanto contribuyo esa region,followup
+y cuanto incidio esa region,followup
+y cuanto aportaron esos sectores,followup
+y cuanto incidieron esas actividades,followup
+y cual fue la contribucion de eso,followup
+y cual fue la incidencia de eso,followup
+y cual fue el aporte de eso,followup
+y cual fue la variacion de eso,followup
+y cual fue el crecimiento de eso,followup
+cual fue la contribucion de eso,followup
+cual fue la incidencia de eso,followup
+cual fue el aporte de eso,followup
+cual fue la variacion de eso,followup
+cual fue el crecimiento de eso,followup
+dame la contribucion de eso,followup
+dame la incidencia de eso,followup
+dame el aporte de eso,followup
+dame la variacion de eso,followup
+dame el crecimiento de eso,followup
+dame la contribucion de lo anterior,followup
+dame la incidencia de lo anterior,followup
+dame el aporte de lo anterior,followup
+dame la variacion de lo anterior,followup
+dame el crecimiento de lo anterior,followup
+ahora para mineria,followup
+ahora para comercio,followup
+ahora para servicios,followup
+ahora para industria,followup
+ahora para construccion,followup
+ahora para antofagasta,followup
+ahora para la region metropolitana,followup
+ahora para valparaiso,followup
+ahora para aysen,followup
+ahora por sector,followup
+ahora por actividad,followup
+ahora por regiones,followup
+y para mineria,followup
+y para comercio,followup
+y para servicios,followup
+y para industria,followup
+y para construccion,followup
+y para antofagasta,followup
+y para la region metropolitana,followup
+y para valparaiso,followup
+y para aysen,followup
+y por sector,followup
+y por actividad,followup
+y por regiones,followup
+ahora en antofagasta,followup
+ahora en la region metropolitana,followup
+ahora en valparaiso,followup
+ahora en aysen,followup
+y en antofagasta,followup
+y en la region metropolitana,followup
+y en valparaiso,followup
+y en aysen,followup
+ahora en 2024,followup
+ahora en 2023,followup
+ahora en marzo 2024,followup
+ahora en el ultimo trimestre,followup
+y en 2024,followup
+y en 2023,followup
+y en marzo 2024,followup
+y en el ultimo trimestre,followup
+ahora desestacionalizado,followup
+ahora serie original,followup
+ahora con ajuste estacional,followup
+ahora sin ajuste estacional,followup
+y desestacionalizado,followup
+y serie original,followup
+y con ajuste estacional,followup
+y sin ajuste estacional,followup
+y el mismo dato pero para mineria,followup
+y el mismo dato pero para comercio,followup
+y el mismo dato pero para servicios,followup
+y el mismo dato pero para antofagasta,followup
+y el mismo dato pero para la region metropolitana,followup
+y la misma contribucion pero para mineria,followup
+y la misma contribucion pero para comercio,followup
+y la misma contribucion pero para antofagasta,followup
+y la misma variacion pero para mineria,followup
+y la misma variacion pero para comercio,followup
+y la misma incidencia pero para la region metropolitana,followup
+y el mismo indicador para mineria,followup
+y el mismo indicador para comercio,followup
+y el mismo indicador para antofagasta,followup
+y el mismo calculo para 2024,followup
+y el mismo calculo para marzo 2024,followup
+ahora dame el ranking,followup
+ahora ordenalos de mayor a menor,followup
+ahora ordenalos de menor a mayor,followup
+ahora dame el que mas contribuyo,followup
+ahora dame el que menos contribuyo,followup
+ahora dame el que mas incidio,followup
+ahora dame el que menos incidio,followup
+ahora dame el que mas crecio,followup
+ahora dame el que menos crecio,followup
+y cual fue el que mas contribuyo,followup
+y cual fue el que menos contribuyo,followup
+y cual fue el que mas incidio,followup
+y cual fue el que menos incidio,followup
+y cual fue el que mas aporto,followup
+y cual fue el que menos aporto,followup
+y cual fue el que mas vario,followup
+y cual fue el que menos vario,followup
+y cual fue el que mas crecio,followup
+y cual fue el que menos crecio,followup
+cual fue el que mas contribuyo,followup
+cual fue el que menos contribuyo,followup
+cual fue el que mas incidio,followup
+cual fue el que menos incidio,followup
+cual fue el que mas aporto,followup
+cual fue el que menos aporto,followup
+cual fue el que mas vario,followup
+cual fue el que menos vario,followup
+cual fue el que mas crecio,followup
+cual fue el que menos crecio,followup
+y ahora dame solo mineria,followup
+y ahora dame solo comercio,followup
+y ahora dame solo servicios,followup
+y ahora dame solo antofagasta,followup
+y ahora dame solo la region metropolitana,followup
+ahora dame solo mineria,followup
+ahora dame solo comercio,followup
+ahora dame solo servicios,followup
+ahora dame solo antofagasta,followup
+ahora dame solo la region metropolitana,followup
+texto,label
+dame la contribucion de la mineria al pib desestacionalizado,standalone
+dame la contribucion del comercio al pib desestacionalizado,standalone
+dame la contribucion de los servicios al pib desestacionalizado,standalone
+dame la contribucion de la industria al pib desestacionalizado,standalone
+dame la contribucion de la construccion al pib desestacionalizado,standalone
+cual fue la contribucion de la mineria al pib con ajuste estacional,standalone
+cual fue la contribucion del comercio al pib con ajuste estacional,standalone
+cual fue la contribucion de los servicios al pib con ajuste estacional,standalone
+cual fue la incidencia de la mineria en el pib desestacionalizado,standalone
+cual fue la incidencia del comercio en el pib desestacionalizado,standalone
+cual fue la incidencia de los servicios en el pib desestacionalizado,standalone
+que sector contribuyo mas al pib desestacionalizado,standalone
+que sector contribuyo menos al pib desestacionalizado,standalone
+que actividad incidio mas en el pib con ajuste estacional,standalone
+que actividad incidio menos en el pib con ajuste estacional,standalone
+que rubro explico el crecimiento del pib desestacionalizado,standalone
+que rubro explico la variacion del pib con ajuste estacional,standalone
+que componente impulso el pib desestacionalizado,standalone
+que componente freno el pib desestacionalizado,standalone
+cuanto aporto la inversion al pib desestacionalizado,standalone
+cuanto incidio el consumo en el pib desestacionalizado,standalone
+cuanto contribuyeron las exportaciones al pib desestacionalizado,standalone
+cuanto contribuyo la demanda interna al pib con ajuste estacional,standalone
+cual fue la contribucion del consumo privado al pib con ajuste estacional,standalone
+cual fue la incidencia de la formacion bruta de capital fijo en el pib desestacionalizado,standalone
+dame la variacion t t menos 1 del imacec desestacionalizado,standalone
+dame la variacion respecto al periodo anterior del imacec desestacionalizado,standalone
+cual fue la variacion en el margen del imacec desestacionalizado,standalone
+cuanto vario el imacec desestacionalizado respecto al mes anterior,standalone
+cuanto crecio el imacec con ajuste estacional frente al periodo anterior,standalone
+cual fue la variacion mensual del imacec ajustado estacionalmente,standalone
+cual fue el crecimiento mensual del imacec desestacionalizado,standalone
+que variacion tuvo el imacec sa frente al mes previo,standalone
+que cambio registro el imacec desestacionalizado respecto al periodo anterior,standalone
+cual fue el dato t t menos 1 del pib desestacionalizado,standalone
+cual fue la variacion del pib desestacionalizado respecto al trimestre anterior,standalone
+cuanto vario el pib con ajuste estacional frente al trimestre previo,standalone
+cual fue el crecimiento trimestral del pib desestacionalizado,standalone
+que variacion tuvo el pib sa respecto al periodo anterior,standalone
+dame el pib desestacionalizado t t menos 1,standalone
+dame el imacec desestacionalizado t t menos 1,standalone
+cuanto vario la mineria en el pib desestacionalizado,standalone
+cuanto vario el comercio en el pib desestacionalizado,standalone
+cuanto variaron los servicios en el pib desestacionalizado,standalone
+cuanto vario la industria en el pib desestacionalizado,standalone
+cuanto vario la construccion en el pib desestacionalizado,standalone
+cual fue la variacion de la mineria en el pib con ajuste estacional,standalone
+cual fue la variacion del comercio en el pib con ajuste estacional,standalone
+cual fue la variacion de los servicios en el pib con ajuste estacional,standalone
+que sector mostro la mayor variacion en el pib desestacionalizado,standalone
+que sector mostro la menor variacion en el pib desestacionalizado,standalone
+que actividad lidero la variacion del pib con ajuste estacional,standalone
+que actividad tuvo la menor variacion del pib con ajuste estacional,standalone
+cuanto contribuyo la mineria al crecimiento de la region metropolitana desestacionalizada,standalone
+cuanto contribuyo el comercio al crecimiento de la region metropolitana desestacionalizada,standalone
+cuanto contribuyeron los servicios al crecimiento de la region metropolitana desestacionalizada,standalone
+cual fue la incidencia de la mineria en la region metropolitana con ajuste estacional,standalone
+cual fue la contribucion del comercio en la region metropolitana con ajuste estacional,standalone
+que sector explico el crecimiento de la region metropolitana desestacionalizada,standalone
+que sector incidio mas en la region metropolitana con ajuste estacional,standalone
+que sector incidio menos en la region metropolitana con ajuste estacional,standalone
+dame la variacion de la mineria en la region metropolitana,standalone
+dame la variacion del comercio en la region metropolitana,standalone
+dame la variacion de los servicios en la region metropolitana,standalone
+cual fue la variacion interanual de la mineria en la region metropolitana,standalone
+cual fue la variacion mensual de la mineria en la region metropolitana,standalone
+cual fue la variacion en el margen de la mineria en la region metropolitana,standalone
+cuanto contribuyo la mineria al crecimiento de antofagasta desestacionalizada,standalone
+cuanto contribuyo el comercio al crecimiento de antofagasta desestacionalizada,standalone
+cuanto contribuyeron los servicios al crecimiento de antofagasta desestacionalizada,standalone
+cual fue la incidencia de la mineria en antofagasta con ajuste estacional,standalone
+cual fue la contribucion del comercio en antofagasta con ajuste estacional,standalone
+que sector explico el crecimiento de antofagasta desestacionalizada,standalone
+que sector incidio mas en antofagasta con ajuste estacional,standalone
+que sector incidio menos en antofagasta con ajuste estacional,standalone
+dame la variacion de la mineria en antofagasta,standalone
+dame la variacion del comercio en antofagasta,standalone
+dame la variacion de los servicios en antofagasta,standalone
+cual fue la variacion interanual de la mineria en antofagasta,standalone
+cual fue la variacion mensual de la mineria en antofagasta,standalone
+cual fue la variacion en el margen de la mineria en antofagasta,standalone
+cuanto contribuyo la mineria al crecimiento de valparaiso,standalone
+cuanto contribuyo el comercio al crecimiento de valparaiso,standalone
+cuanto contribuyeron los servicios al crecimiento de valparaiso,standalone
+dame la variacion de la mineria en valparaiso,standalone
+dame la variacion del comercio en valparaiso,standalone
+dame la variacion de los servicios en valparaiso,standalone
+cuanto contribuyo la mineria al crecimiento del biobio,standalone
+cuanto contribuyo el comercio al crecimiento del biobio,standalone
+cuanto contribuyeron los servicios al crecimiento del biobio,standalone
+dame la variacion de la mineria en el biobio,standalone
+dame la variacion del comercio en el biobio,standalone
+dame la variacion de los servicios en el biobio,standalone
+cuanto contribuyo la mineria al crecimiento de aysen,standalone
+cuanto contribuyo el comercio al crecimiento de aysen,standalone
+cuanto contribuyeron los servicios al crecimiento de aysen,standalone
+dame la variacion de la mineria en aysen,standalone
+dame la variacion del comercio en aysen,standalone
+dame la variacion de los servicios en aysen,standalone
+cuanto contribuyo la mineria al crecimiento de atacama en 2024,standalone
+cuanto contribuyo la mineria al crecimiento de antofagasta en 2024,standalone
+cuanto contribuyo la mineria al crecimiento de tarapaca en 2024,standalone
+cuanto contribuyo la mineria al crecimiento de coquimbo en 2024,standalone
+cuanto contribuyo la mineria al crecimiento de atacama en 2023,standalone
+cuanto contribuyo la mineria al crecimiento de antofagasta en 2023,standalone
+cuanto contribuyeron los sectores a la region metropolitana en 2024,standalone
+cuanto contribuyeron los sectores a la region metropolitana en 2023,standalone
+cuanto contribuyeron los sectores a antofagasta en 2024,standalone
+cuanto contribuyeron los sectores a antofagasta en 2023,standalone
+dame la contribucion sectorial del pib en el ultimo trimestre,standalone
+dame la contribucion sectorial del pib en el trimestre anterior,standalone
+dame la variacion sectorial del pib en el ultimo trimestre,standalone
+dame la variacion sectorial del pib en el trimestre anterior,standalone
+cual fue la incidencia sectorial del pib en el ultimo trimestre,standalone
+cual fue la incidencia sectorial del pib en el trimestre anterior,standalone
+que sector lidero el crecimiento del pib en el ultimo trimestre,standalone
+que sector tuvo la menor incidencia en el pib del ultimo trimestre,standalone
+dame la contribucion por actividad del imacec desestacionalizado,standalone
+dame la variacion por actividad del imacec desestacionalizado,standalone
+cual fue la incidencia por actividad del imacec desestacionalizado,standalone
+que actividad impulso el imacec desestacionalizado,standalone
+que actividad freno el imacec desestacionalizado,standalone
+que actividad tuvo la mayor variacion en el imacec desestacionalizado,standalone
+que actividad tuvo la menor variacion en el imacec desestacionalizado,standalone
+dame el crecimiento de mineria en el imacec desestacionalizado,standalone
+dame el crecimiento de comercio en el imacec desestacionalizado,standalone
+dame el crecimiento de servicios en el imacec desestacionalizado,standalone
+ahora dame la contribucion t t menos 1,followup
+ahora dame la variacion t t menos 1,followup
+ahora dame la incidencia t t menos 1,followup
+ahora dame el cambio respecto al periodo anterior,followup
+ahora dame el crecimiento respecto al periodo anterior,followup
+ahora dame la version desestacionalizada,followup
+ahora dame la version con ajuste estacional,followup
+ahora dame la version sin ajuste estacional,followup
+ahora dame la serie sa,followup
+ahora dame la serie nsa,followup
+y ahora t t menos 1,followup
+y ahora respecto al periodo anterior,followup
+y ahora en el margen,followup
+y ahora desestacionalizado,followup
+y ahora con ajuste estacional,followup
+y ahora sin ajuste estacional,followup
+y ahora sa,followup
+y ahora nsa,followup
+y ahora para la mineria en antofagasta,followup
+y ahora para el comercio en antofagasta,followup
+y ahora para los servicios en antofagasta,followup
+y ahora para la mineria en la region metropolitana,followup
+y ahora para el comercio en la region metropolitana,followup
+y ahora para los servicios en la region metropolitana,followup
+ahora para la mineria en antofagasta,followup
+ahora para el comercio en antofagasta,followup
+ahora para los servicios en antofagasta,followup
+ahora para la mineria en la region metropolitana,followup
+ahora para el comercio en la region metropolitana,followup
+ahora para los servicios en la region metropolitana,followup
+y la misma variacion pero desestacionalizada,followup
+y la misma contribucion pero desestacionalizada,followup
+y la misma incidencia pero desestacionalizada,followup
+y el mismo crecimiento pero con ajuste estacional,followup
+y el mismo dato pero t t menos 1,followup
+y el mismo calculo pero respecto al periodo anterior,followup
+y lo mismo pero desestacionalizado,followup
+y lo mismo pero con ajuste estacional,followup
+y lo mismo pero serie original,followup
+y lo mismo para mineria en antofagasta,followup
+y lo mismo para comercio en antofagasta,followup
+y lo mismo para servicios en antofagasta,followup
+y lo mismo para mineria en la region metropolitana,followup
+y lo mismo para comercio en la region metropolitana,followup
+y lo mismo para servicios en la region metropolitana,followup
+y ahora dame el ranking de contribuciones,followup
+y ahora dame el ranking de variaciones,followup
+y ahora dame el ranking de incidencias,followup
+y ahora ordena por contribucion,followup
+y ahora ordena por variacion,followup
+y ahora ordena por incidencia,followup
+ahora dame el top 3 por contribucion,followup
+ahora dame el top 3 por variacion,followup
+ahora dame el top 3 por incidencia,followup
+ahora dame el bottom 3 por contribucion,followup
+ahora dame el bottom 3 por variacion,followup
+ahora dame el bottom 3 por incidencia,followup
+y el top 3,followup
+y el bottom 3,followup
+y las mayores contribuciones,followup
+y las menores contribuciones,followup
+y las mayores variaciones,followup
+y las menores variaciones,followup
+y las mayores incidencias,followup
+y las menores incidencias,followup
+ok ahora dame la version desestacionalizada,followup
+ok ahora dame la serie original,followup
+ok ahora dame la variacion respecto al periodo anterior,followup
+ok ahora dame la contribucion de eso en 2024,followup
+ok ahora dame la contribucion de eso en marzo 2024,followup
+perfecto ahora dame la version sa,followup
+perfecto ahora dame la version nsa,followup
+perfecto ahora dame el t t menos 1,followup
+perfecto ahora dame la contribucion para antofagasta,followup
+perfecto ahora dame la variacion para la region metropolitana,followup
+entonces ahora dame la serie desestacionalizada,followup
+entonces ahora dame la variacion t t menos 1,followup
+entonces ahora dame la contribucion por actividad,followup
+entonces ahora dame la contribucion para mineria,followup
+entonces ahora dame la variacion para comercio,followup
+pero ahora dame la serie original,followup
+pero ahora dame la variacion respecto al periodo anterior,followup
+pero ahora dame la incidencia por sector,followup
+pero ahora dame el dato para antofagasta,followup
+pero ahora dame el dato para la region metropolitana,followup
+ok dame la variacion t t menos 1 del imacec,standalone
+ok dame la variacion t t menos 1 del pib,standalone
+ok dame la contribucion de la mineria al crecimiento de antofagasta,standalone
+ok dame la contribucion de los sectores a la region metropolitana,standalone
+ahora dime la variacion t t menos 1 del imacec,standalone
+ahora dime la variacion t t menos 1 del pib,standalone
+ahora dime la contribucion de la mineria al crecimiento de antofagasta,standalone
+ahora dime la contribucion de los sectores a la region metropolitana,standalone
+y dime la variacion t t menos 1 del imacec,standalone
+y dime la variacion t t menos 1 del pib,standalone
+y dime la contribucion de la mineria al crecimiento de antofagasta,standalone
+y dime la contribucion de los sectores a la region metropolitana,standalone
+podrias darme la variacion t t menos 1 del imacec,standalone
+podrias darme la variacion t t menos 1 del pib,standalone
+podrias darme la contribucion de la mineria al crecimiento de antofagasta,standalone
+podrias darme la contribucion de los sectores a la region metropolitana,standalone
+quiero saber la variacion t t menos 1 del imacec,standalone
+quiero saber la variacion t t menos 1 del pib,standalone
+quiero saber la contribucion de la mineria al crecimiento de antofagasta,standalone
+quiero saber la contribucion de los sectores a la region metropolitana,standalone

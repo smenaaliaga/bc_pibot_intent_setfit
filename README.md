@@ -52,20 +52,20 @@ python -c "import torch; print(torch.__version__, torch.cuda.is_available(), tor
 ## 3) Entrenamiento
 
 ```bash
-python -m src.main train --data-dir data --output-dir artifacts --device cpu
+python -m src.main train --data-dir data --output-dir models/artifacts --device cpu
 ```
 
 Para GPU:
 
 ```bash
-python -m src.main train --data-dir data --output-dir artifacts --device cuda
+python -m src.main train --data-dir data --output-dir models/artifacts --device cuda
 ```
 
 Por defecto el split es `train/val/test` con `--val-size 0.2` y `--test-size 0.1`.
 Si quieres ajustar proporciones:
 
 ```bash
-python -m src.main train --data-dir data --output-dir artifacts --device cuda --val-size 0.1 --test-size 0.1
+python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --val-size 0.1 --test-size 0.1
 ```
 
 Durante `train` se imprime:
@@ -86,18 +86,21 @@ Con los datasets actuales (intent más desbalanceado por clase minoritaria `othe
 - `--lr-heads 5e-4`
 - `--weight-decay 0.05`
 - `--task-weight-macro 1.0`
-- `--task-weight-intent 1.2`
+- `--task-weight-intent 1.4`
 - `--task-weight-context 0.8`
 - `--seed 42`
 
 Comando recomendado:
 
 ```bash
-python -m src.main train --data-dir data --output-dir artifacts --device cuda --val-size 0.1 --test-size 0.1 --epochs 8 --batch-size 16 --lr-encoder 1.5e-5 --lr-heads 5e-4 --weight-decay 0.05 --task-weight-macro 1.0 --task-weight-intent 1.2 --task-weight-context 0.8 --seed 42
+python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --val-size 0.1 --test-size 0.1 --epochs 10 --batch-size 16 --lr-encoder 1.5e-5 --lr-heads 5e-4 --weight-decay 0.05 --task-weight-macro 1.0 --task-weight-intent 1.4 --task-weight-context 0.8 --seed 42 --use-lora --lora-r 8 --lora-alpha 16 --lora-dropout 0.1
 ```
 
+Nota importante de calidad de datos:
+- Revisa que en `data/dataset_context.csv` no existan filas de header duplicado (por ejemplo `texto,label`), porque pueden introducir una clase espuria (`label`) y degradar el entrenamiento.
+
 ```bash
-python -m src.main train --data-dir data --output-dir artifacts --device cuda --epochs 20 --batch-size 10 --seed 42
+python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --epochs 20 --batch-size 10 --seed 42
 ```
 
 También puedes parametrizar nombres de archivos y columnas:
@@ -119,16 +122,62 @@ Parámetros importantes:
 - `--val-size`
 - `--seed`
 
+### Entrenamiento con LoRA (Low-Rank Adaptation)
+
+Por defecto, el modelo usa **LoRA** para entrenar el encoder de manera más eficiente. LoRA reduce significativamente el número de parámetros entrenables manteniendo buena generalización:
+
+- **Parámetros entrenables**: ~73K (0.32% del encoder)
+- **Parámetros totales**: 22.7M
+- **Módulos adaptados**: Query y Value projections en las capas de atención
+
+#### Parámetros de LoRA
+
+```bash
+--use-lora           # Habilitar/deshabilitar LoRA (default: True)
+--lora-r 8           # Rango de adaptación (default: 8)
+--lora-alpha 16      # Factor de escalado (default: 16)
+--lora-dropout 0.1   # Dropout rate (default: 0.1)
+```
+
+#### Ejemplos
+
+Entrenar **con LoRA habilitado** (recomendado para datos limitados):
+
+```bash
+python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --use-lora --lora-r 8 --lora-alpha 16 --epochs 20
+```
+
+Recomendación con LoRA y desbalance:
+
+```bash
+python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --val-size 0.1 --test-size 0.1 --epochs 10 --batch-size 16 --lr-encoder 1.5e-5 --lr-heads 5e-4 --weight-decay 0.05 --task-weight-macro 1.0 --task-weight-intent 1.4 --task-weight-context 0.8 --seed 42 --use-lora --lora-r 8 --lora-alpha 16 --lora-dropout 0.1
+```
+
+Entrenar **sin LoRA** (si prefieres fine-tuning completo):
+
+```bash
+python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --epochs 20
+```
+
+Nota CLI:
+- Actualmente `--use-lora` es un flag tipo `store_true`. Si quieres entrenar sin LoRA, simplemente no incluyas el flag.
+
+**Ventajas de LoRA**:
+- Mejor generalización con pocos datos
+- Menor consumo de memoria
+- Entrenamiento más rápido
+- Evita overfitting al mantener 99.68% de parámetros congelados
+
 ## 4) Evaluación
 
 ```bash
-python -m src.main evaluate --artifact-dir artifacts --data-dir data --device cpu
+python -m src.main evaluate --artifact-dir models/artifacts --data-dir data --device cpu
 ```
 
 Puedes elegir split de evaluación:
 
 ```bash
-python -m src.main evaluate --artifact-dir artifacts --data-dir data --split test --val-size 0.1 --test-size 0.1
+python -m src.main evaluate --artifact-dir models/artifacts --data-dir data --split test --val-size 0.1 --test-size 0.1
 ```
 
 ## 5) Test por texto
@@ -136,25 +185,25 @@ python -m src.main evaluate --artifact-dir artifacts --data-dir data --split tes
 Predice las **3 tareas a la vez** con score:
 
 ```bash
-python -m src.main test --artifact-dir artifacts --text "quiero pagar mi factura" --device cpu
+python -m src.main test --artifact-dir models/artifacts --text "quiero pagar mi factura" --device cpu
 ```
 
 Múltiples textos en la misma ejecución:
 
 ```bash
-python -m src.main test --artifact-dir artifacts --text "hola" --text "necesito ayuda"
+python -m src.main test --artifact-dir models/artifacts --text "hola" --text "necesito ayuda"
 ```
 
 O desde archivo (una línea por texto):
 
 ```bash
-python -m src.main test --artifact-dir artifacts --texts-file data/texts_for_test.txt
+python -m src.main test --artifact-dir models/artifacts --texts-file data/texts_for_test.txt
 ```
 
 ## 6) Modo interactivo
 
 ```bash
-python -m src.main interactive --artifact-dir artifacts --device cuda
+python -m src.main interactive --artifact-dir models/artifacts --device cuda
 ```
 
 Escribe `exit` para terminar.
@@ -164,7 +213,7 @@ Escribe `exit` para terminar.
 Muestra clasificación por tarea y ranking top-k por cada una:
 
 ```bash
-python -m src.main qa --artifact-dir artifacts --device cpu --top-k 3
+python -m src.main qa --artifact-dir models/artifacts --device cpu --top-k 3
 ```
 
 Escribe `exit` para terminar.
@@ -197,13 +246,13 @@ Después de `hf auth login`, puedes subir **sin** pasar token explícito:
 ### Opción A: Desde `main.py` (sin token)
 
 ```bash
-python -m src.main upload --artifact-dir artifacts --repo-id TU_USUARIO/TU_REPO --clean-repo
+python -m src.main upload --artifact-dir models/artifacts --repo-id TU_USUARIO/TU_REPO --clean-repo
 ```
 
 ### Opción B: Script dedicado (sin token)
 
 ```bash
-python scripts/upload_to_hf.py --artifact-dir artifacts --repo-id TU_USUARIO/TU_REPO --clean-repo
+python scripts/upload_to_hf.py --artifact-dir models/artifacts --repo-id TU_USUARIO/TU_REPO --clean-repo
 ```
 
 Si prefieres pasar token explícito (por ejemplo en CI), usa variable de entorno:
@@ -217,16 +266,16 @@ $env:HF_TOKEN="hf_xxx"
 ### Opción A: Desde `main.py` (con token)
 
 ```bash
-python -m src.main upload --artifact-dir artifacts --repo-id TU_USUARIO/TU_REPO --hf-token $env:HF_TOKEN --clean-repo
+python -m src.main upload --artifact-dir models/artifacts --repo-id TU_USUARIO/TU_REPO --hf-token $env:HF_TOKEN --clean-repo
 ```
 
 ### Opción B: Script dedicado (con token)
 
 ```bash
-python scripts/upload_to_hf.py --artifact-dir artifacts --repo-id TU_USUARIO/TU_REPO --hf-token $env:HF_TOKEN --clean-repo
+python scripts/upload_to_hf.py --artifact-dir models/artifacts --repo-id TU_USUARIO/TU_REPO --hf-token $env:HF_TOKEN --clean-repo
 ```
 
-Ambas opciones crean (si no existe) el repo `TU_USUARIO/TU_REPO` y suben el contenido de `artifacts/` + `README.md` en la raíz del repo en HF.
+Ambas opciones crean (si no existe) el repo `TU_USUARIO/TU_REPO` y suben el contenido de `models/artifacts/` + `README.md` en la raíz del repo en HF.
 
 Notas útiles:
 
@@ -254,11 +303,11 @@ Debes ver, al menos:
 
 Con estos comandos se suben los artefactos del modelo, que sirven para descargar y usar inferencia desde código.
 
-Si quieres desplegar un **Inference Endpoint** administrado en Hugging Face con carga automática del repo, además de `artifacts/` necesitarás publicar también un `handler.py` y dependencias (`requirements.txt`) para que el endpoint sepa cómo inicializar y ejecutar la predicción multitarea.
+Si quieres desplegar un **Inference Endpoint** administrado en Hugging Face con carga automática del repo, además de `models/artifacts/` necesitarás publicar también un `handler.py` y dependencias (`requirements.txt`) para que el endpoint sepa cómo inicializar y ejecutar la predicción multitarea.
 
 ## 8) Artefactos generados
 
-En `artifacts/` se guarda:
+En `models/artifacts/` se guarda:
 - `encoder/`
 - `heads.pt`
 - `label2id.json`

@@ -35,7 +35,23 @@ def save_artifacts(
 
 
 def load_artifacts(artifact_dir: Path, device: str = "cpu"):
-    encoder = SharedEncoder.load(str(artifact_dir / "encoder"), device=device)
+    # Cargar configuración de entrenamiento para obtener parámetros de LoRA
+    with open(artifact_dir / "train_config.json", "r", encoding="utf-8") as file:
+        train_config = json.load(file)
+    
+    use_lora = train_config.get("use_lora", False)
+    lora_r = train_config.get("lora_r", 8)
+    lora_alpha = train_config.get("lora_alpha", 16)
+    lora_dropout = train_config.get("lora_dropout", 0.1)
+    
+    encoder = SharedEncoder.load(
+        str(artifact_dir / "encoder"),
+        device=device,
+        use_lora=use_lora,
+        lora_r=lora_r,
+        lora_alpha=lora_alpha,
+        lora_dropout=lora_dropout,
+    )
 
     with open(artifact_dir / "label2id.json", "r", encoding="utf-8") as file:
         label2id = json.load(file)
