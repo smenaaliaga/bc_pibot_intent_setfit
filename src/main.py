@@ -221,7 +221,7 @@ def build_parser() -> argparse.ArgumentParser:
     train_parser.add_argument("--test-size", type=float, default=0.1)
     train_parser.add_argument("--seed", type=int, default=42)
     train_parser.add_argument("--device", default="cpu")
-    train_parser.add_argument("--use-lora", action="store_true", default=True, help="Enable LoRA for encoder fine-tuning")
+    train_parser.add_argument("--use-lora", action="store_true", default=False, help="Enable LoRA for encoder fine-tuning")
     train_parser.add_argument("--lora-r", type=int, default=8, help="LoRA rank")
     train_parser.add_argument("--lora-alpha", type=int, default=16, help="LoRA alpha scaling")
     train_parser.add_argument("--lora-dropout", type=float, default=0.1, help="LoRA dropout rate")

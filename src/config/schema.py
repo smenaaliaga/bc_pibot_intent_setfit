@@ -30,7 +30,7 @@ class TrainConfig:
     device: str = "cpu"
     output_dir: Path = Path("artifacts")
     seed: int = 42
-    use_lora: bool = True
+    use_lora: bool = False
     lora_r: int = 8
     lora_alpha: int = 16
     lora_dropout: float = 0.1

@@ -56,13 +56,13 @@ python -m src.main train \
   --device cuda \
   --val-size 0.1 \
   --test-size 0.1 \
-  --epochs 20 \
+  --epochs 25 \
   --batch-size 16 \
   --lr-encoder 8e-6 \
   --lr-heads 4e-4 \
   --weight-decay 0.05 \
-  --task-weight-macro 1.0 \
-  --task-weight-intent 1.4 \
+  --task-weight-macro 1.2 \
+  --task-weight-intent 1.5 \
   --task-weight-context 0.8 \
   --patience 5 \
   --seed 42
