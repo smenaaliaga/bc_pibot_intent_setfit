@@ -332,48 +332,27 @@ y ahora sin ajuste estacional,followup
 y el mismo dato pero desestacionalizado,followup
 y el mismo dato pero serie original,followup
 puedes darme su ultimo valor,followup
-puedes darme su último valor,followup
 puedes darme su ultima cifra,followup
-puedes darme su última cifra,followup
 puedes darme su ultimo dato,followup
-puedes darme su último dato,followup
 podrias darme su ultimo valor,followup
-podrías darme su último valor,followup
 me puedes dar su ultimo valor,followup
 me puedes dar su valor mas reciente,followup
-me puedes dar su valor más reciente,followup
 puedes darme su valor mas reciente,followup
-puedes darme su valor más reciente,followup
 puedes darme la ultima cifra de eso,followup
-puedes darme la última cifra de eso,followup
 puedes darme el ultimo valor de eso,followup
-puedes darme el último valor de eso,followup
 puedes darme el ultimo dato de eso,followup
-puedes darme el último dato de eso,followup
 puedes darme su lectura mas reciente,followup
-puedes darme su lectura más reciente,followup
 puedes darme detalles de su calculo,followup
-puedes darme detalles de su cálculo,followup
 dame detalles de su calculo,followup
-dame detalles de su cálculo,followup
 dame detalles del calculo de eso,followup
-dame detalles del cálculo de eso,followup
 me puedes explicar su calculo,followup
-me puedes explicar su cálculo,followup
 quiero entender su calculo,followup
-quiero entender su cálculo,followup
 explica el calculo de lo anterior,followup
-explica el cálculo de lo anterior,followup
 como se calcula eso exactamente,followup
-cómo se calcula eso exactamente,followup
 cual es el metodo de calculo de eso,followup
-cuál es el método de cálculo de eso,followup
 dame el detalle metodologico de eso,followup
-dame el detalle metodológico de eso,followup
 detalle de como se calcula eso,followup
-detalle de cómo se calcula eso,followup
 podrias detallar su calculo,followup
-podrías detallar su cálculo,followup
 que actividad impulso el crecimiento de la economia,standalone
 que actividades impulsaron el crecimiento de la economia,standalone
 que actividad explico el crecimiento de la economia,standalone
@@ -531,7 +510,7 @@ quien tuvo el crecimiento mas bajo,followup
 quien crecio menos,followup
 cual fue el mas debil en crecimiento,followup
 cual quedo ultimo en crecimiento,followup
-el de peor desempeño fue cual,followup
+el de peor desempeno fue cual,followup
 que elemento tuvo el crecimiento mas bajo,followup
 cual mostro el menor dinamismo,followup
 cual tuvo el mayor crecimiento,followup
@@ -546,7 +525,6 @@ quien tuvo el mayor aumento,followup
 cual incidio mas en el crecimiento,followup
 quien incidio mas en el crecimiento,followup
 cual tuvo la mayor incidencia,followup
-texto,label
 cuanto contribuyo la mineria en el pib,standalone
 cuanto vario la mineria en el pib,standalone
 cuanto contribuyeron los sectores economicos al crecimiento de la region metropolitana,standalone
@@ -567,7 +545,6 @@ cuanto contribuyeron las actividades economicas al crecimiento del pib,standalon
 cuales fueron las contribuciones sectoriales al pib,standalone
 que sectores contribuyeron al crecimiento del pib,standalone
 que actividades incidieron en el crecimiento del pib,standalone
-que sectores explicaron el crecimiento del pib,standalone
 que rubros aportaron al pib,standalone
 que componentes impulsaron el crecimiento del pib,standalone
 cual fue el sector que mas contribuyo al pib,standalone
@@ -587,7 +564,6 @@ cuanto crecio la mineria,standalone
 cual fue la variacion de la mineria,standalone
 cual fue el crecimiento de la mineria,standalone
 cuanto vario el sector minero,standalone
-cuanto crecio el sector minero,standalone
 cual fue la variacion interanual de la mineria,standalone
 cual fue la variacion mensual de la mineria,standalone
 cual fue la variacion en el margen de la mineria,standalone
@@ -614,7 +590,6 @@ cuanto contribuyo el comercio al crecimiento de la region metropolitana,standalo
 cuanto contribuyeron los servicios al crecimiento de la region metropolitana,standalone
 cuanto aporto la industria al crecimiento de la region metropolitana,standalone
 cuanto incidio la construccion en el crecimiento de la region metropolitana,standalone
-cuanto contribuyo la mineria al crecimiento de antofagasta,standalone
 cuanto aporto la mineria al crecimiento de antofagasta,standalone
 cuanto incidio la mineria en el crecimiento de antofagasta,standalone
 cual fue la contribucion de la mineria al crecimiento de antofagasta,standalone
@@ -637,7 +612,6 @@ cuanto contribuyeron los sectores al crecimiento economico,standalone
 cuanto aportaron los sectores al crecimiento economico,standalone
 cuanto incidieron los sectores en el crecimiento economico,standalone
 cuales fueron las contribuciones de los sectores al crecimiento economico,standalone
-que sectores impulsaron el crecimiento economico,standalone
 que actividades explicaron el crecimiento economico,standalone
 que rubros sostuvieron el crecimiento economico,standalone
 cual fue el principal aporte sectorial al crecimiento economico,standalone
@@ -676,8 +650,6 @@ ok cual fue la inflacion de 2024,standalone
 ok dime la variacion de la mineria en 2024,standalone
 ok dime cuanto contribuyo la mineria al pib,standalone
 ok dime cuanto contribuyo la mineria al crecimiento de antofagasta,standalone
-ahora dime cual fue el pib de 2024,standalone
-ahora dime cual fue el imacec de enero 2024,standalone
 ahora dime cuanto crecio la mineria,standalone
 ahora dime cuanto contribuyo la mineria al pib,standalone
 ahora dime cuanto contribuyeron los sectores a la region metropolitana,standalone
@@ -729,13 +701,9 @@ y su crecimiento,followup
 y la contribucion de eso,followup
 y la incidencia de eso,followup
 y el aporte de eso,followup
-y la variacion de eso,followup
-y el crecimiento de eso,followup
 y cuanto contribuyo eso,followup
 y cuanto incidio eso,followup
 y cuanto aporto eso,followup
-y cuanto vario eso,followup
-y cuanto crecio eso,followup
 y cuanto contribuyo lo anterior,followup
 y cuanto incidio lo anterior,followup
 y cuanto aporto lo anterior,followup
@@ -782,18 +750,10 @@ ahora para aysen,followup
 ahora por sector,followup
 ahora por actividad,followup
 ahora por regiones,followup
-y para mineria,followup
-y para comercio,followup
-y para servicios,followup
 y para industria,followup
 y para construccion,followup
 y para antofagasta,followup
-y para la region metropolitana,followup
-y para valparaiso,followup
 y para aysen,followup
-y por sector,followup
-y por actividad,followup
-y por regiones,followup
 ahora en antofagasta,followup
 ahora en la region metropolitana,followup
 ahora en valparaiso,followup
@@ -806,18 +766,11 @@ ahora en 2024,followup
 ahora en 2023,followup
 ahora en marzo 2024,followup
 ahora en el ultimo trimestre,followup
-y en 2024,followup
-y en 2023,followup
 y en marzo 2024,followup
-y en el ultimo trimestre,followup
 ahora desestacionalizado,followup
 ahora serie original,followup
 ahora con ajuste estacional,followup
 ahora sin ajuste estacional,followup
-y desestacionalizado,followup
-y serie original,followup
-y con ajuste estacional,followup
-y sin ajuste estacional,followup
 y el mismo dato pero para mineria,followup
 y el mismo dato pero para comercio,followup
 y el mismo dato pero para servicios,followup
@@ -846,13 +799,11 @@ ahora dame el que menos crecio,followup
 y cual fue el que mas contribuyo,followup
 y cual fue el que menos contribuyo,followup
 y cual fue el que mas incidio,followup
-y cual fue el que menos incidio,followup
 y cual fue el que mas aporto,followup
 y cual fue el que menos aporto,followup
 y cual fue el que mas vario,followup
 y cual fue el que menos vario,followup
 y cual fue el que mas crecio,followup
-y cual fue el que menos crecio,followup
 cual fue el que mas contribuyo,followup
 cual fue el que menos contribuyo,followup
 cual fue el que mas incidio,followup
@@ -862,7 +813,6 @@ cual fue el que menos aporto,followup
 cual fue el que mas vario,followup
 cual fue el que menos vario,followup
 cual fue el que mas crecio,followup
-cual fue el que menos crecio,followup
 y ahora dame solo mineria,followup
 y ahora dame solo comercio,followup
 y ahora dame solo servicios,followup
@@ -873,7 +823,6 @@ ahora dame solo comercio,followup
 ahora dame solo servicios,followup
 ahora dame solo antofagasta,followup
 ahora dame solo la region metropolitana,followup
-texto,label
 dame la contribucion de la mineria al pib desestacionalizado,standalone
 dame la contribucion del comercio al pib desestacionalizado,standalone
 dame la contribucion de los servicios al pib desestacionalizado,standalone
@@ -1015,8 +964,6 @@ y ahora t t menos 1,followup
 y ahora respecto al periodo anterior,followup
 y ahora en el margen,followup
 y ahora desestacionalizado,followup
-y ahora con ajuste estacional,followup
-y ahora sin ajuste estacional,followup
 y ahora sa,followup
 y ahora nsa,followup
 y ahora para la mineria en antofagasta,followup

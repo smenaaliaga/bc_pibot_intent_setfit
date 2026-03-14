@@ -606,66 +606,33 @@ mas de eso,other
 mas informacion,other
 mas contexto,other
 puedes darme su ultimo valor,value
-puedes darme su último valor,value
-puedes darme su ultima cifra,value
-puedes darme su última cifra,value
 puedes darme su ultimo dato,value
-puedes darme su último dato,value
 podrias darme su ultimo valor,value
-podrías darme su último valor,value
 me puedes dar su ultimo valor,value
 me puedes dar su valor mas reciente,value
-me puedes dar su valor más reciente,value
 puedes darme su valor mas reciente,value
-puedes darme su valor más reciente,value
 puedes darme la ultima cifra de eso,value
-puedes darme la última cifra de eso,value
-puedes darme el ultimo valor de eso,value
-puedes darme el último valor de eso,value
-puedes darme el ultimo dato de eso,value
-puedes darme el último dato de eso,value
 puedes darme su lectura mas reciente,value
-puedes darme su lectura más reciente,value
 puedes darme detalles de su calculo,methodology
-puedes darme detalles de su cálculo,methodology
 dame detalles de su calculo,methodology
-dame detalles de su cálculo,methodology
 dame detalles del calculo de eso,methodology
-dame detalles del cálculo de eso,methodology
 me puedes explicar su calculo,methodology
-me puedes explicar su cálculo,methodology
 puedes explicar su metodologia de calculo,methodology
-puedes explicar su metodología de cálculo,methodology
 quiero entender su calculo,methodology
-quiero entender su cálculo,methodology
 explica el calculo de lo anterior,methodology
-explica el cálculo de lo anterior,methodology
 como se calcula eso exactamente,methodology
-cómo se calcula eso exactamente,methodology
 cual es el metodo de calculo de eso,methodology
-cuál es el método de cálculo de eso,methodology
 dame el detalle metodologico de eso,methodology
-dame el detalle metodológico de eso,methodology
 puedes profundizar en su metodologia,methodology
-puedes profundizar en su metodología,methodology
 necesito mas detalle de su metodologia de calculo,methodology
-necesito más detalle de su metodología de cálculo,methodology
 detalle de como se calcula eso,methodology
-detalle de cómo se calcula eso,methodology
 quiero mas detalles de su metodologia,methodology
-quiero más detalles de su metodología,methodology
 podrias detallar su calculo,methodology
-podrías detallar su cálculo,methodology
 aclara su metodologia de calculo,methodology
-aclara su metodología de cálculo,methodology
 puedes dar mas detalles de la metodologia,methodology
-puedes dar más detalles de la metodología,methodology
 desarrolla el calculo de eso,methodology
-desarrolla el cálculo de eso,methodology
 muestrame la metodologia de calculo de lo anterior,methodology
-muéstrame la metodología de cálculo de lo anterior,methodology
 detalla la formula de calculo de eso,methodology
-detalla la fórmula de cálculo de eso,methodology
 que actividad impulso el crecimiento de la economia,value
 que actividades impulsaron el crecimiento de la economia,value
 que actividad explico el crecimiento de la economia,value
@@ -1124,3 +1091,80 @@ explica mejor como se calcula la contribucion regional,methodology
 quiero entender la metodologia de contribucion regional,methodology
 podrias detallar el calculo de la incidencia regional,methodology
 quiero mas detalle sobre el aporte regional al crecimiento,methodology
+explicame mas,other
+dame mas informacion,other
+puedes profundizar,other
+podrias profundizar,other
+puedes ampliar,other
+podrias ampliar,other
+puedes extender,other
+podrias extender,other
+necesito mas detalle,other
+quiero saber mas,other
+quiero mas informacion sobre eso,other
+me puedes explicar mejor,other
+me puedes dar mas detalle,other
+puedes ser mas especifico,other
+se mas especifico,other
+dame un poco mas de informacion,other
+dame mas informacion sobre eso,other
+quiero entender mejor eso,other
+quiero entender mejor lo anterior,other
+no me quedo claro,other
+no entendi bien,other
+no entendi eso,other
+puedes explicarlo de otra forma,other
+puedes explicarlo de otro modo,other
+podrias explicarlo mejor,other
+explicalo de otra manera,other
+dimelo de otra forma,other
+ponlo en palabras mas simples,other
+no quedo claro eso,other
+a que te refieres con eso,other
+que quieres decir con eso,other
+como es eso,other
+como asi,other
+que significa eso,other
+que quiere decir eso,other
+dame un ejemplo,other
+dame un ejemplo de eso,other
+puedes darme un ejemplo,other
+podrias dar un ejemplo,other
+un ejemplo de lo anterior,other
+ilustra eso con un ejemplo,other
+tienes un ejemplo de eso,other
+y eso que significa,other
+y eso que quiere decir,other
+elabora un poco mas,other
+puedes elaborar,other
+podrias elaborar,other
+desarrolla eso un poco mas,other
+puedes desarrollar eso,other
+podrias desarrollar eso,other
+por que,other
+y por que,other
+y eso por que,other
+como es eso exactamente,other
+puedes repetir la respuesta,other
+puedes repetirlo,other
+repitelo,other
+dimelo otra vez,other
+y eso que implica,other
+que implica eso,other
+en serio,other
+de verdad,other
+estas seguro,other
+seguro de eso,other
+puedes verificar eso,other
+puedes confirmar eso,other
+eso esta correcto,other
+eso es correcto,other
+dame la version corta,other
+resumelo en una linea,other
+en resumen,other
+en pocas palabras,other
+hazlo mas simple,other
+simplifica eso,other
+simplificalo,other
+hazlo mas breve,other
+se mas breve,other

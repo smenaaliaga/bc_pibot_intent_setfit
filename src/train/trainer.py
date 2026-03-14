@@ -1,5 +1,6 @@
+import copy
 from dataclasses import dataclass
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import torch
 from torch import nn
@@ -49,12 +50,23 @@ class MultiTaskTrainer:
     def _make_loader(self, dataset: TextLabelDataset, shuffle: bool = True) -> DataLoader:
         return DataLoader(dataset, batch_size=self.train_config.batch_size, shuffle=shuffle)
 
+    def _mean_val_f1(self, val_metrics: Dict[str, Dict[str, float]]) -> float:
+        f1_scores = [m["f1_macro"] for m in val_metrics.values() if not (m["f1_macro"] != m["f1_macro"])]
+        return sum(f1_scores) / len(f1_scores) if f1_scores else 0.0
+
     def train(
         self,
         train_datasets: Dict[str, TextLabelDataset],
         val_datasets: Dict[str, TextLabelDataset],
     ) -> TrainArtifacts:
         history: Dict[str, List[float]] = {"loss": []}
+        patience = self.train_config.patience
+        min_delta = self.train_config.min_delta
+        best_f1 = -1.0
+        epochs_no_improve = 0
+        best_encoder_state: Optional[dict] = None
+        best_heads_state: Optional[dict] = None
+        best_epoch = 0
 
         for epoch in range(self.train_config.epochs):
             self.model.train()
@@ -91,7 +103,25 @@ class MultiTaskTrainer:
             avg_loss = epoch_loss / max(step_count, 1)
             history["loss"].append(avg_loss)
             val_metrics = self.evaluate(val_datasets)
-            print(f"Epoch {epoch + 1} | train_loss={avg_loss:.4f} | val={val_metrics}")
+            mean_f1 = self._mean_val_f1(val_metrics)
+            print(f"Epoch {epoch + 1} | train_loss={avg_loss:.4f} | val_mean_f1={mean_f1:.4f} | val={val_metrics}")
+
+            if mean_f1 > best_f1 + min_delta:
+                best_f1 = mean_f1
+                best_epoch = epoch + 1
+                epochs_no_improve = 0
+                best_heads_state = copy.deepcopy(self.model.state_dict())
+                best_encoder_state = copy.deepcopy(self.encoder.model.state_dict())
+            else:
+                epochs_no_improve += 1
+                if patience > 0 and epochs_no_improve >= patience:
+                    print(f"Early stopping at epoch {epoch + 1}. Best epoch: {best_epoch} (val_mean_f1={best_f1:.4f})")
+                    break
+
+        if best_encoder_state is not None:
+            self.encoder.model.load_state_dict(best_encoder_state)
+            self.model.load_state_dict(best_heads_state)
+            print(f"Restored best model from epoch {best_epoch} (val_mean_f1={best_f1:.4f})")
 
         return TrainArtifacts(encoder=self.encoder, multitask_model=self.model, history=history)
 

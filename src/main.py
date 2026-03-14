@@ -66,6 +66,8 @@ def train_command(args) -> None:
         lora_r=args.lora_r,
         lora_alpha=args.lora_alpha,
         lora_dropout=args.lora_dropout,
+        patience=args.patience,
+        min_delta=args.min_delta,
     )
 
     seed_everything(train_config.seed)
@@ -205,7 +207,7 @@ def build_parser() -> argparse.ArgumentParser:
     train_parser.add_argument("--text-col", default="text")
     train_parser.add_argument("--label-col", default="label")
     train_parser.add_argument("--output-dir", default="models/artifacts")
-    train_parser.add_argument("--model-name", default="sentence-transformers/all-MiniLM-L6-v2")
+    train_parser.add_argument("--model-name", default="paraphrase-multilingual-MiniLM-L12-v2")
     train_parser.add_argument("--epochs", type=int, default=3)
     train_parser.add_argument("--batch-size", type=int, default=16)
     train_parser.add_argument("--max-length", type=int, default=128)
@@ -223,6 +225,8 @@ def build_parser() -> argparse.ArgumentParser:
     train_parser.add_argument("--lora-r", type=int, default=8, help="LoRA rank")
     train_parser.add_argument("--lora-alpha", type=int, default=16, help="LoRA alpha scaling")
     train_parser.add_argument("--lora-dropout", type=float, default=0.1, help="LoRA dropout rate")
+    train_parser.add_argument("--patience", type=int, default=5, help="Early stopping patience (0=disabled)")
+    train_parser.add_argument("--min-delta", type=float, default=0.001, help="Min F1 improvement to reset patience")
     train_parser.set_defaults(func=train_command)
 
     evaluate_parser = subparsers.add_parser("evaluate")

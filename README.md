@@ -1,321 +1,169 @@
 # bc_pibot_intent_setfit
 
-Proyecto end-to-end para entrenar **3 cabezas clasificadoras multitarea** con un **sentence embedding compartido**:
+Clasificador multitarea para routing de preguntas macroeconómicas. Usa un **encoder compartido** con **3 cabezas clasificadoras** independientes entrenadas de forma conjunta.
 
-- `macro_cls`: `{1, 0}`
-- `intent_cls`: `{value, methodology, other}`
-- `context_mode_cls`: `{standalone, followup}`
+## Arquitectura
 
-Incluye:
-- Entrenamiento multitarea real (`train`)
-- Evaluación (`evaluate`)
-- Test por texto (`test`)
-- Modo interactivo (`interactive`)
-- Modo QA por consola (`qa`)
-- Subida a Hugging Face (`upload` o `scripts/upload_to_hf.py`)
+```
+Texto → [Encoder multilingual-mpnet-base-v2 (278M params, 768 dim)]
+              │
+              ├── macro_cls:   Linear(768,384) → ReLU → Dropout(0.3) → Linear(384,2)   → {1, 0}
+              ├── intent_cls:  Linear(768,384) → ReLU → Dropout(0.3) → Linear(384,3)   → {value, methodology, other}
+              └── context_cls: Linear(768,384) → ReLU → Dropout(0.3) → Linear(384,2)   → {standalone, followup}
+```
 
-## 1) Estructura esperada de datos
+| Tarea | Clases | Descripción |
+|-------|--------|-------------|
+| `macro` | `1`, `0` | ¿Es una pregunta macroeconómica? |
+| `intent` | `value`, `methodology`, `other` | ¿Pide un dato, una explicación metodológica, o es ambiguo? |
+| `context` | `standalone`, `followup` | ¿La pregunta es independiente o depende de la anterior? |
 
-En `data/` deben existir:
+## Datasets
 
-- `dataset_macro.csv`
-- `dataset_intent.csv`
-- `dataset_context.csv`
+En `data/` deben existir 3 CSVs con columnas `text` y `label`:
 
-Cada CSV debe tener columnas obligatorias:
+| Archivo | Ejemplos | Distribución |
+|---------|----------|--------------|
+| `dataset_macro.csv` | 794 | 610 macro=1, 184 macro=0 |
+| `dataset_intent.csv` | 1169 | 748 value, 266 methodology, 155 other |
+| `dataset_context.csv` | 1054 | 535 standalone, 519 followup |
 
-- `text`
-- `label`
-
-## 2) Instalación
+## Instalación
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate # source .venv/bin/activate
+.venv\Scripts\activate   # Windows
+# source .venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
-### Opcional: habilitar GPU (NVIDIA)
-
-Si quieres entrenar en GPU, instala PyTorch con CUDA:
+### GPU (opcional)
 
 ```bash
-python -m pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 ```
 
-Verificación rápida:
+## Entrenamiento
+
+### Comando recomendado (fine-tuning completo, sin LoRA)
 
 ```bash
-python -c "import torch; print(torch.__version__, torch.cuda.is_available(), torch.version.cuda)"
+python -m src.main train \
+  --model-name sentence-transformers/paraphrase-multilingual-mpnet-base-v2 \
+  --data-dir data \
+  --output-dir models/artifacts \
+  --device cuda \
+  --val-size 0.1 \
+  --test-size 0.1 \
+  --epochs 20 \
+  --batch-size 16 \
+  --lr-encoder 8e-6 \
+  --lr-heads 4e-4 \
+  --weight-decay 0.05 \
+  --task-weight-macro 1.0 \
+  --task-weight-intent 1.4 \
+  --task-weight-context 0.8 \
+  --patience 5 \
+  --seed 42
 ```
 
-## 3) Entrenamiento
+### Parámetros clave
+
+| Parámetro | Default | Descripción |
+|-----------|---------|-------------|
+| `--model-name` | `paraphrase-multilingual-MiniLM-L12-v2` | Encoder sentence-transformers |
+| `--epochs` | `3` | Máximo de épocas (early stopping puede cortar antes) |
+| `--lr-encoder` | `2e-5` | Learning rate del encoder |
+| `--lr-heads` | `1e-3` | Learning rate de las cabezas |
+| `--weight-decay` | `0.01` | Regularización L2 |
+| `--task-weight-intent` | `1.0` | Peso de la tarea intent (subir para clases desbalanceadas) |
+| `--patience` | `5` | Épocas sin mejora antes de parar (0 = desactivado) |
+| `--min-delta` | `0.001` | Mejora mínima en val F1 para resetear patience |
+
+### Early stopping
+
+El trainer monitorea el **promedio de F1-macro** de las 3 tareas sobre validación. Si no mejora en `--patience` épocas consecutivas:
+1. Detiene el entrenamiento
+2. Restaura los pesos del mejor epoch
+
+Esto permite usar `--epochs 20` sin riesgo de sobreajuste: el modelo se queda con la mejor versión.
+
+### LoRA (opcional)
+
+Para entrenar solo adaptadores LoRA en lugar de fine-tuning completo:
 
 ```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cpu
+python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --use-lora --lora-r 8 --lora-alpha 16 --lora-dropout 0.1 --epochs 20 --patience 5
 ```
 
-Para GPU:
+Sin el flag `--use-lora`, se hace fine-tuning completo (recomendado con alta capacidad de cómputo).
+
+## Evaluación
 
 ```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cuda
+python -m src.main evaluate --artifact-dir models/artifacts --data-dir data --split test --device cuda
 ```
 
-Por defecto el split es `train/val/test` con `--val-size 0.2` y `--test-size 0.1`.
-Si quieres ajustar proporciones:
+## Test por texto
 
 ```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --val-size 0.1 --test-size 0.1
+python -m src.main test --artifact-dir models/artifacts --text "cuanto crecio el pib" --device cuda
 ```
 
-Durante `train` se imprime:
-- tamaño por tarea para `train`, `val`, `test`
-- evaluación por época sobre `val`
-- evaluación final explícita sobre `val` y `test`
-
-### Configuración recomendada (según tus datasets actuales)
-
-Con los datasets actuales (intent más desbalanceado por clase minoritaria `other` y context más pequeño), una configuración más robusta para generalizar es:
-
-- `--device cuda`
-- `--val-size 0.1`
-- `--test-size 0.1`
-- `--epochs 8`
-- `--batch-size 16`
-- `--lr-encoder 1.5e-5`
-- `--lr-heads 5e-4`
-- `--weight-decay 0.05`
-- `--task-weight-macro 1.0`
-- `--task-weight-intent 1.4`
-- `--task-weight-context 0.8`
-- `--seed 42`
-
-Comando recomendado:
+Múltiples textos:
 
 ```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --val-size 0.1 --test-size 0.1 --epochs 10 --batch-size 16 --lr-encoder 1.5e-5 --lr-heads 5e-4 --weight-decay 0.05 --task-weight-macro 1.0 --task-weight-intent 1.4 --task-weight-context 0.8 --seed 42 --use-lora --lora-r 8 --lora-alpha 16 --lora-dropout 0.1
+python -m src.main test --artifact-dir models/artifacts --text "cuanto crecio el pib" --text "como se calcula el imacec"
 ```
 
-Nota importante de calidad de datos:
-- Revisa que en `data/dataset_context.csv` no existan filas de header duplicado (por ejemplo `texto,label`), porque pueden introducir una clase espuria (`label`) y degradar el entrenamiento.
-
-```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --epochs 20 --batch-size 10 --seed 42
-```
-
-También puedes parametrizar nombres de archivos y columnas:
-
-```bash
-python -m src.main train --data-dir data --macro-file dataset_macro.csv --intent-file dataset_intent.csv --context-file dataset_context.csv --text-col text --label-col label
-```
-
-Parámetros importantes:
-- `--model-name`
-- `--epochs`
-- `--batch-size`
-- `--lr-encoder`
-- `--lr-heads`
-- `--task-weight-macro`
-- `--task-weight-intent`
-- `--task-weight-context`
-- `--test-size`
-- `--val-size`
-- `--seed`
-
-### Entrenamiento con LoRA (Low-Rank Adaptation)
-
-Por defecto, el modelo usa **LoRA** para entrenar el encoder de manera más eficiente. LoRA reduce significativamente el número de parámetros entrenables manteniendo buena generalización:
-
-- **Parámetros entrenables**: ~73K (0.32% del encoder)
-- **Parámetros totales**: 22.7M
-- **Módulos adaptados**: Query y Value projections en las capas de atención
-
-#### Parámetros de LoRA
-
-```bash
---use-lora           # Habilitar/deshabilitar LoRA (default: True)
---lora-r 8           # Rango de adaptación (default: 8)
---lora-alpha 16      # Factor de escalado (default: 16)
---lora-dropout 0.1   # Dropout rate (default: 0.1)
-```
-
-#### Ejemplos
-
-Entrenar **con LoRA habilitado** (recomendado para datos limitados):
-
-```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --use-lora --lora-r 8 --lora-alpha 16 --epochs 20
-```
-
-Recomendación con LoRA y desbalance:
-
-```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --val-size 0.1 --test-size 0.1 --epochs 10 --batch-size 16 --lr-encoder 1.5e-5 --lr-heads 5e-4 --weight-decay 0.05 --task-weight-macro 1.0 --task-weight-intent 1.4 --task-weight-context 0.8 --seed 42 --use-lora --lora-r 8 --lora-alpha 16 --lora-dropout 0.1
-```
-
-Entrenar **sin LoRA** (si prefieres fine-tuning completo):
-
-```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --epochs 20
-```
-
-Nota CLI:
-- Actualmente `--use-lora` es un flag tipo `store_true`. Si quieres entrenar sin LoRA, simplemente no incluyas el flag.
-
-**Ventajas de LoRA**:
-- Mejor generalización con pocos datos
-- Menor consumo de memoria
-- Entrenamiento más rápido
-- Evita overfitting al mantener 99.68% de parámetros congelados
-
-## 4) Evaluación
-
-```bash
-python -m src.main evaluate --artifact-dir models/artifacts --data-dir data --device cpu
-```
-
-Puedes elegir split de evaluación:
-
-```bash
-python -m src.main evaluate --artifact-dir models/artifacts --data-dir data --split test --val-size 0.1 --test-size 0.1
-```
-
-## 5) Test por texto
-
-Predice las **3 tareas a la vez** con score:
-
-```bash
-python -m src.main test --artifact-dir models/artifacts --text "quiero pagar mi factura" --device cpu
-```
-
-Múltiples textos en la misma ejecución:
-
-```bash
-python -m src.main test --artifact-dir models/artifacts --text "hola" --text "necesito ayuda"
-```
-
-O desde archivo (una línea por texto):
+Desde archivo (una línea por texto):
 
 ```bash
 python -m src.main test --artifact-dir models/artifacts --texts-file data/texts_for_test.txt
 ```
 
-## 6) Modo interactivo
+## Modo interactivo
 
 ```bash
 python -m src.main interactive --artifact-dir models/artifacts --device cuda
 ```
 
-Escribe `exit` para terminar.
+## Subir a Hugging Face
 
-## 6.1) Modo QA por consola
-
-Muestra clasificación por tarea y ranking top-k por cada una:
-
-```bash
-python -m src.main qa --artifact-dir models/artifacts --device cpu --top-k 3
-```
-
-Escribe `exit` para terminar.
-
-## 7) Subir a Hugging Face
-
-### 7.1) Prerrequisitos
-
-- Python 3.10+ con entorno virtual activo.
-- Dependencia instalada:
+### Setup (una vez)
 
 ```bash
 pip install huggingface-hub
+huggingface-cli login
 ```
 
-- Cuenta en https://huggingface.co con token de escritura (`write`) en Settings → Access Tokens.
-
-### 7.2) Login en Hugging Face (una sola vez)
+### Upload
 
 ```bash
-hf auth login
+python -m src.main upload --artifact-dir models/artifacts --repo-id BCCh/pibot-intent-router --clean-repo
 ```
 
-Pega el token cuando se solicite. Queda guardado en cache local de Hugging Face.
-
-### 7.3) Subir los artefactos del modelo
-
-Después de `hf auth login`, puedes subir **sin** pasar token explícito:
-
-### Opción A: Desde `main.py` (sin token)
+Con token explícito (CI):
 
 ```bash
-python -m src.main upload --artifact-dir models/artifacts --repo-id TU_USUARIO/TU_REPO --clean-repo
+python -m src.main upload --artifact-dir models/artifacts --repo-id BCCh/pibot-intent-router --hf-token $HF_TOKEN --clean-repo
 ```
 
-### Opción B: Script dedicado (sin token)
+`--clean-repo` elimina archivos previos en HF que no estén en la subida actual.
 
-```bash
-python scripts/upload_to_hf.py --artifact-dir models/artifacts --repo-id TU_USUARIO/TU_REPO --clean-repo
+## Artefactos generados
+
+En `models/artifacts/`:
+
+```
+encoder/              # Encoder sentence-transformers serializado
+heads.pt              # Pesos de las 3 cabezas clasificadoras
+label2id.json         # Mapeo label → id por tarea
+id2label.json         # Mapeo id → label por tarea
+train_config.json     # Configuración usada en entrenamiento
 ```
 
-Si prefieres pasar token explícito (por ejemplo en CI), usa variable de entorno:
+## Despliegue en endpoint
 
-PowerShell (Windows):
-
-```bash
-$env:HF_TOKEN="hf_xxx"
-```
-
-### Opción A: Desde `main.py` (con token)
-
-```bash
-python -m src.main upload --artifact-dir models/artifacts --repo-id TU_USUARIO/TU_REPO --hf-token $env:HF_TOKEN --clean-repo
-```
-
-### Opción B: Script dedicado (con token)
-
-```bash
-python scripts/upload_to_hf.py --artifact-dir models/artifacts --repo-id TU_USUARIO/TU_REPO --hf-token $env:HF_TOKEN --clean-repo
-```
-
-Ambas opciones crean (si no existe) el repo `TU_USUARIO/TU_REPO` y suben el contenido de `models/artifacts/` + `README.md` en la raíz del repo en HF.
-
-Notas útiles:
-
-- `--clean-repo` elimina archivos previos en HF que no estén en la subida actual (evita "archivos viejos").
-- Se usa siempre `scripts/README.md` como model card y se publica en HF como `README.md`.
-- `--private` es opcional (solo si quieres crear/subir a repositorio privado).
-
-### 7.4) Verificación rápida
-
-Abre en navegador:
-
-```bash
-https://huggingface.co/TU_USUARIO/TU_REPO
-```
-
-Debes ver, al menos:
-
-- `encoder/`
-- `heads.pt`
-- `label2id.json`
-- `id2label.json`
-- `train_config.json`
-
-### 7.5) Uso posterior en endpoint
-
-Con estos comandos se suben los artefactos del modelo, que sirven para descargar y usar inferencia desde código.
-
-Si quieres desplegar un **Inference Endpoint** administrado en Hugging Face con carga automática del repo, además de `models/artifacts/` necesitarás publicar también un `handler.py` y dependencias (`requirements.txt`) para que el endpoint sepa cómo inicializar y ejecutar la predicción multitarea.
-
-## 8) Artefactos generados
-
-En `models/artifacts/` se guarda:
-- `encoder/`
-- `heads.pt`
-- `label2id.json`
-- `id2label.json`
-- `train_config.json`
-
-## 9) Notas
-
-- El sistema está parametrizado por CLI para entrenamiento, evaluación, test y upload.
-- El modo `test` y `interactive` devuelven `label` y `score` para `macro`, `intent`, `context`.
-- El modo `qa` además muestra el ranking top-k por tarea.
+Para Hugging Face Inference Endpoints, además de los artefactos se necesita un `handler.py` y `requirements.txt` en el repo para que el endpoint sepa inicializar y ejecutar la predicción multitarea.

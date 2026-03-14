@@ -17,7 +17,7 @@ class DataConfig:
 
 @dataclass(frozen=True)
 class TrainConfig:
-    model_name: str = "sentence-transformers/all-MiniLM-L6-v2"
+    model_name: str = "paraphrase-multilingual-MiniLM-L12-v2"
     max_length: int = 128
     epochs: int = 3
     batch_size: int = 16
@@ -34,6 +34,8 @@ class TrainConfig:
     lora_r: int = 8
     lora_alpha: int = 16
     lora_dropout: float = 0.1
+    patience: int = 5
+    min_delta: float = 0.001
 
 
 TASKS = ("macro", "intent", "context")
