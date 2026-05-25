@@ -46,25 +46,25 @@ python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 
 ## Entrenamiento
 
-### Comando recomendado (fine-tuning completo, sin LoRA)
+### Comando de entrenamiento
 
 ```bash
-python -m src.main train \
-  --model-name sentence-transformers/paraphrase-multilingual-mpnet-base-v2 \
-  --data-dir data \
-  --output-dir models/artifacts \
-  --device cuda \
-  --val-size 0.1 \
-  --test-size 0.1 \
-  --epochs 25 \
-  --batch-size 16 \
-  --lr-encoder 8e-6 \
-  --lr-heads 4e-4 \
-  --weight-decay 0.05 \
-  --task-weight-macro 1.2 \
-  --task-weight-intent 1.5 \
-  --task-weight-context 0.8 \
-  --patience 5 \
+python -m src.main train `
+  --model-name sentence-transformers/paraphrase-multilingual-mpnet-base-v2 `
+  --data-dir data `
+  --output-dir models/artifacts `
+  --device cuda `
+  --val-size 0.1 `
+  --test-size 0.1 `
+  --epochs 25 `
+  --batch-size 16 `
+  --lr-encoder 8e-6 `
+  --lr-heads 4e-4 `
+  --weight-decay 0.05 `
+  --task-weight-macro 1.2 `
+  --task-weight-intent 1.5 `
+  --task-weight-context 0.8 `
+  --patience 5 `
   --seed 42
 ```
 
@@ -88,16 +88,6 @@ El trainer monitorea el **promedio de F1-macro** de las 3 tareas sobre validaci�
 2. Restaura los pesos del mejor epoch
 
 Esto permite usar `--epochs 20` sin riesgo de sobreajuste: el modelo se queda con la mejor versión.
-
-### LoRA (opcional)
-
-Para entrenar solo adaptadores LoRA en lugar de fine-tuning completo:
-
-```bash
-python -m src.main train --data-dir data --output-dir models/artifacts --device cuda --use-lora --lora-r 8 --lora-alpha 16 --lora-dropout 0.1 --epochs 20 --patience 5
-```
-
-Sin el flag `--use-lora`, se hace fine-tuning completo (recomendado con alta capacidad de cómputo).
 
 ## Evaluación
 

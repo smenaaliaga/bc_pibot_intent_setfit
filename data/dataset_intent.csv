@@ -518,6 +518,23 @@ donde se ve la metadata del pibr,methodology
 cuando se publica el imacec mensual,methodology
 cual es el rezago de publicacion del imacec,methodology
 como comparar pib e imacec correctamente,methodology
+cual es el valor del imacec minero,value
+cuall es el valor del imacec minero,value
+cual fue el valor del imacec minero,value
+dame el valor del imacec minero,value
+cual es el valor de la inversion,value
+cuall es el valor de la inversion,value
+cual fue el valor de la inversion,value
+dame el valor de la inversion,value
+cual es el valor del consumo,value
+cuall es el valor del consumo,value
+cual fue el valor del consumo,value
+dame el valor del consumo,value
+cual es la cifra de la inversion,value
+cual es la cifra del consumo,value
+dame la cifra del imacec minero,value
+necesito el valor de la inversion del ultimo periodo,value
+necesito el valor del consumo del ultimo periodo,value
 en que casos no conviene comparar imacec con pib,methodology
 que limita el uso del imacec como proxy del pib,methodology
 como se interpreta una serie encadenada,methodology
@@ -1168,3 +1185,120 @@ simplifica eso,other
 simplificalo,other
 hazlo mas breve,other
 se mas breve,other
+cual es el pib,value
+cual es el imacec,value
+cual es el pibr,value
+cual es el imacec minero,value
+cual es el imacec no minero,value
+cual es la variacion del pib,value
+cual es la variacion del imacec,value
+cual es el crecimiento del pib,value
+cual es el crecimiento del imacec,value
+cual es el crecimiento economico,value
+cual es la cifra del pib actual,value
+cual es la cifra del imacec actual,value
+cual es el ultimo pib,value
+cual es el ultimo imacec,value
+cual es el dato del pib,value
+cual es el dato del imacec,value
+cual es el valor del pib,value
+cual es el valor del imacec,value
+cual es el resultado del pib,value
+cual es el resultado del imacec,value
+cual es el nivel del pib,value
+cual es el nivel del imacec,value
+cual es el numero del imacec,value
+cual es el numero del pib,value
+cual es la lectura del imacec,value
+cual es la lectura del pib,value
+pib,value
+imacec,value
+pibr,value
+imacec minero,value
+imacec no minero,value
+crecimiento economico,value
+variacion del pib,value
+variacion del imacec,value
+crecimiento del pib,value
+crecimiento del imacec,value
+pib trimestral,value
+pib anual,value
+imacec mensual,value
+dato del pib,value
+dato del imacec,value
+cifra del pib,value
+cifra del imacec,value
+ultimo pib,value
+ultimo imacec,value
+como esta el pib,value
+como esta el imacec,value
+como va el pib,value
+como va el imacec,value
+como vino el imacec,value
+como vino el pib,value
+salio el imacec,value
+salio el pib,value
+como salio el imacec,value
+como salio el pib,value
+que salio el imacec,value
+que salio el pib,value
+que tal estuvo el pib,value
+que tal estuvo el imacec,value
+que tal estuvo la economia,value
+que tal vino el imacec,value
+que tal vino el pib,value
+como le fue a la economia,value
+que tal le fue a la economia,value
+como vino la economia,value
+como esta la economia,value
+cual es el imacec de servicios,value
+cual es el imacec de mineria,value
+cual es el imacec de comercio,value
+cual es el imacec de industria,value
+cual es el imacec de bienes,value
+cual es el pib de servicios,value
+cual es el pib de mineria,value
+cual es el pib de comercio,value
+cual es el pib de industria,value
+cual es el pib de construccion,value
+cual es el consumo,value
+cual es la inversion,value
+cual es la demanda interna,value
+cual es el ahorro interno,value
+cual es el ahorro externo,value
+cual es el pib por actividad,value
+cual es el pib por sector,value
+cual es el imacec por actividad,value
+cual es el imacec por sector,value
+pib de chile,value
+imacec de chile,value
+economia de chile,value
+crecimiento de chile,value
+actividad economica de chile,value
+cuanto esta el pib,value
+cuanto esta el imacec,value
+cuanto marco el pib,value
+cuanto registro el imacec,value
+cuanto registro el pib,value
+en cuanto quedo el imacec,value
+en cuanto quedo el pib,value
+cuanto quedo el imacec,value
+cuanto quedo el pib,value
+a cuanto llego el imacec,value
+a cuanto llego el pib,value
+como quedo el imacec,value
+como quedo el pib,value
+cual es el resultado de la economia,value
+cual es el dato de la economia,value
+cual es la cifra de la economia,value
+cual es la variacion de la economia,value
+cual es el crecimiento de la economia,value
+cual es el nivel de la economia,value
+que numero marco el pib,value
+que numero marco el imacec,value
+que cifra registro el pib,value
+que cifra registro el imacec,value
+que dato arrojo el pib,value
+que dato arrojo el imacec,value
+que resultado dio el pib,value
+que resultado dio el imacec,value

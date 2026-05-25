@@ -62,10 +62,6 @@ def train_command(args) -> None:
         device=args.device,
         output_dir=Path(args.output_dir),
         seed=args.seed,
-        use_lora=args.use_lora,
-        lora_r=args.lora_r,
-        lora_alpha=args.lora_alpha,
-        lora_dropout=args.lora_dropout,
         patience=args.patience,
         min_delta=args.min_delta,
     )
@@ -95,10 +91,6 @@ def train_command(args) -> None:
     encoder = SharedEncoder(
         model_name=train_config.model_name,
         device=train_config.device,
-        use_lora=train_config.use_lora,
-        lora_r=train_config.lora_r,
-        lora_alpha=train_config.lora_alpha,
-        lora_dropout=train_config.lora_dropout,
     )
     embedding_dim = encoder.encode(["_probe_"], convert_to_tensor=True).shape[-1]
     num_classes_by_task = {task: len(mapping) for task, mapping in label_maps.items()}
@@ -221,10 +213,6 @@ def build_parser() -> argparse.ArgumentParser:
     train_parser.add_argument("--test-size", type=float, default=0.1)
     train_parser.add_argument("--seed", type=int, default=42)
     train_parser.add_argument("--device", default="cpu")
-    train_parser.add_argument("--use-lora", action="store_true", default=False, help="Enable LoRA for encoder fine-tuning")
-    train_parser.add_argument("--lora-r", type=int, default=8, help="LoRA rank")
-    train_parser.add_argument("--lora-alpha", type=int, default=16, help="LoRA alpha scaling")
-    train_parser.add_argument("--lora-dropout", type=float, default=0.1, help="LoRA dropout rate")
     train_parser.add_argument("--patience", type=int, default=5, help="Early stopping patience (0=disabled)")
     train_parser.add_argument("--min-delta", type=float, default=0.001, help="Min F1 improvement to reset patience")
     train_parser.set_defaults(func=train_command)
